@@ -1,5 +1,5 @@
 ># **The Academy**
->## **Jack of all Trades or Master of One**
+>## **Jack of All Trades or Master of One**
 >### ***The Most Excellent Journeys of a Generalist***
 >>Many people have asked me throughout my career, *"Matt, what is your area of expertise?"*.  To which I have replied very confusingly and excitedly to others *"None!"*.  People are often perplexed by my answer. *"So you have no special skills?"*, they often reply. Look, I am not saying that I have no special skills.  I have quite a few in spades but what I pride myself in is the ability to be more than a one-trick pony. It comes from the age-old adage, *"A jack of all trades is a master of none, but oftentimes better than a master of one."*  This can be seen in the many roles throughout my career. I have been a legal intern, a restaurant manager, a district retail manager, an IT helpdesk manager, an IT project manager, a reverse logistics manager, a director of IT, a director of sales, a vice president of sales, a chief operating officer, a business owner, a start-up employee, and the list goes on and on. 
   
