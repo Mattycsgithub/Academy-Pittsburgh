@@ -7,4 +7,4 @@
   
 >>So how is being a generalist a special skill that would apply in the software engineering space?  Well from what I have seen, it is quintessential to the field.  From a programming perspective alone, the more languages you know the more projects you are able to work on.  There are exceptions for sure but for the most part employers are not looking for an expert in just one skill.  They are looking for many.  That is what a generalist does. Besides programming, once employed there are so many other parallel skills that could prove beneficial such as soft skills, quality assurance, documentation, management, etc.  So in summary and to quote one of the greats, *"I am still learning."*  Let me learn what the Academy has to teach.
 
->>>*Check out my *[LinkedIn Profile](https://www.linkedin.com/in/mattjclarktech/)* or feel free to send me an email at *<matt.clark@build412tech.com>*
+>>>Check out my *[LinkedIn Profile](https://www.linkedin.com/in/mattjclarktech/)* or feel free to send me an email at *<matt.clark@build412tech.com>*
