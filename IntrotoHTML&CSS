@@ -1,0 +1,13 @@
+<body>
+    <h1>The Web</h1>
+    <main>
+        <div class="box">
+            <h2>HTML</h2>
+            <div>HTML describes what different sections of the document ARE</div>
+        </div>
+        <div class="box">
+            <h2>CSS</h2>
+            <div>CSS tells different parts of the document how to look</div>
+        </div>
+    </main>
+</body>
