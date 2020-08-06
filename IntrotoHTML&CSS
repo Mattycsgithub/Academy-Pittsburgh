@@ -1,13 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Coustard&display=swap" rel="stylesheet">
+    <style>
+        html {
+            margin: 2em;
+            background-color: whitesmoke;
+            background-image: url('https://image.freepik.com/free-photo/closeup-shot-rock-wall_181624-6706.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            font-family: 'Coustard', serif;
+         }
+        h1 {
+            padding: 1em;
+            background-image: url('https://image.freepik.com/free-photo/grunge-wall-texture_1194-6108.jpg');
+            text-align: center;
+            border-style: ridge;
+            border-inline-width: 3px;
+            border-color: black;
+         }
+         h2
+         {
+            text-align: center;
+            background-image: url('https://image.freepik.com/free-photo/gray-wooden-background-texture-design_53876-63633.jpg');
+            border-style: ridge;
+            border-inline-width: 3px;
+            border-color: black;
+         }
+         h3
+         {
+            
+            text-align: center;
+            background-image: url('https://image.freepik.com/free-photo/gray-wooden-background-texture-design_53876-63633.jpg');
+            border-style: ridge;
+            border-inline-width: 3px;
+            border-color: black;
+         }
+         h4 
+         {
+            background-image: url('https://image.freepik.com/free-photo/grunge-wall-texture_1194-6108.jpg');
+            width: 12.5em;
+            border-style: ridge;
+            border-inline-width: 3px;
+            border-color: black;  
+         }
+         
+         p
+         {
+            background-image: url('https://image.freepik.com/free-photo/plaster-wall-texture_1154-716.jpg');
+            border-style: ridge;
+            border-inline-width: 3px;
+            border-color: black;  
+         }
+         ul
+        {
+            background-image: url('https://image.freepik.com/free-photo/plaster-wall-texture_1154-716.jpg');
+            width: 10em; 
+            border-style: ridge;
+            border-inline-width: 3px;
+            border-color: black; 
+        }
+        iframe{
+            align-self: flex-end;
+        }
+         
+    </style>
+</head>
+<h1>The Web
+</h1>
 <body>
-    <h1>The Web</h1>
-    <main>
-        <div class="box">
-            <h2>HTML</h2>
-            <div>HTML describes what different sections of the document ARE</div>
-        </div>
-        <div class="box">
-            <h2>CSS</h2>
-            <div>CSS tells different parts of the document how to look</div>
-        </div>
-    </main>
-</body>
+        <h2>Fundamental Web Programming Languages
+        </h2>
+            <h3>HTML</h3>
+                <p>HTML labels sections of the document to say what they ARE.
+                HTML comes with some default behavior.
+                You can see the HTML for any webpage!
+                This HTML is made of different elements with possible attributes.</p>
+                <h4>Elements</h4>
+                <ul>
+                    <li>html = all the content</code></li>
+                    <li>div = some text</li>
+                    <li>p = a paragraph</li>
+                    <li>img = an image</li>
+                </ul>
+                <h4>Attributes</h4>
+                <ul>
+                    <li>background = color</li>
+                    <li>style = font weight</li>
+                    <li>class = set identification</li>
+                    <li>src = refernece url</li>
+                </ul>
+            <h3>CSS</h3>
+                <p>CSS makes different parts LOOK different.
+                CSS are the rules that tell elements how to look.
+                CSS lives in the HTML file - goes in a style tag.
+                </p>
+            <h3>JS</h3>
+                <p>JS makes custom things HAPPEN.</p>    
+            </body>
+</html>
