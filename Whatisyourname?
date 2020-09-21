@@ -1,0 +1,21 @@
+using System;
+
+namespace Variables
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string input;
+            int x;
+            Console.WriteLine("What is your name: ");
+            input = Console.ReadLine();
+            Console.WriteLine("Your name is:" + input);
+            Console.WriteLine("How old are you?");
+            input = Console.ReadLine();
+            Console.WriteLine("You are this old: " + input);
+            x = Convert.ToInt32(input);
+            Console.WriteLine("You will be " + (x + 5) + " in five years.");
+        }
+    }
+}
