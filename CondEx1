@@ -1,0 +1,25 @@
+using System;
+
+namespace conditionalbasics
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Please input your name:");
+            string name = Console.ReadLine();
+            if (name.Length > 10)
+            {
+                Console.WriteLine("Your name is longer than 10 letters.");
+            }
+            if (name.Length < 4)
+            {
+                Console.WriteLine("Your name is shorter than 4 letters.");
+            }
+            if (name.ToLower().Contains("e"))
+            {
+                Console.WriteLine("Your name contains an E.");
+            }
+        }
+    }
+}
