@@ -1,0 +1,49 @@
+using System;
+
+namespace GardenBox
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string input;
+            int length;
+            int width;
+            double carrotsper4x4block;
+            double cornper4x4block;
+            double beetsper4x4block;
+            double lengthblocklimit;
+            double widthblocklimit;
+
+            Console.WriteLine("I am your garden planter planner assistant. ::beep, bop, boop::  Need input!");
+            Console.WriteLine("Please enter the length of your garden planter ::bzzz::");
+            input = Console.ReadLine();
+            length = Convert.ToInt32(input);
+            Console.WriteLine("Please enter the width of your garden planter  ::mechanical whirl::");
+            input = Console.ReadLine();
+            width = Convert.ToInt32(input);
+            Console.WriteLine("Input! Thankyou!");
+
+
+            Console.WriteLine("The area of you garden box is " + (length * width ));
+            Console.WriteLine("The perimiter of you garden box is " + ((2 * length) + (2 * width)));
+
+            //The formula given for this does not work based on the premise of per 4X4 block but is the formula given to solve.//
+
+            Console.WriteLine("Using magic math you can plant " + ((length * width) / 1) + " carrots.");
+            Console.WriteLine("Using magic math you can plant " + ((length * width) / (16/3)) + " corn.");
+            Console.WriteLine("Using magic math you can plant " + ((length * width) / 3) + " beets.");
+
+            //The correct formula requires to divide both the length and the width individually by 4.//
+
+            lengthblocklimit = length / 4;
+            widthblocklimit = width / 4;
+            carrotsper4x4block = ((Math.Floor(lengthblocklimit)) * (Math.Floor(widthblocklimit))/1);
+
+            Console.WriteLine("Using real math you can plant " + (4 * (Math.Floor((length / 4) * (width / 4))) + " carrots.");
+                
+        }
+    }
+}
+
+
