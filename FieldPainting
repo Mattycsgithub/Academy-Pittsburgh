@@ -1,0 +1,43 @@
+using System;
+
+namespace FieldPainting
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Please input the radius of your circle:");
+            int radius = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Choose your paint color (red, blue, green, or yellow):");
+            string color = Console.ReadLine();
+            double area = Math.PI * radius * radius;
+            int bucketCoverage = 0;
+            int bucketPrice = 0;
+            double totalPrice;
+            if (color == "red")
+            {
+                bucketCoverage = 100;
+                bucketPrice = 25;
+            }
+            if (color == "blue")
+            {
+                bucketCoverage = 120;
+                bucketPrice = 28;
+            }
+            if (color == "green")
+            {
+                bucketCoverage = 90;
+                bucketPrice = 33;
+            }
+            if (color == "yellow")
+            {
+                bucketCoverage = 70;
+                bucketPrice = 22;
+            }
+            double buckets = Math.Ceiling(area / bucketCoverage);
+            totalPrice = buckets * bucketPrice;
+            Console.WriteLine("You will need " + buckets + " buckets of paint.");
+            Console.WriteLine("It will cost $" + totalPrice + ".");
+        }
+    }
+}
