@@ -1,0 +1,85 @@
+using System;
+
+namespace BirthSeason
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Please input the number of your birth month (\"1\" for January, etc.):");
+            int month = Convert.ToInt32(Console.ReadLine());
+            int day = 0;
+            string season = "";
+            if (month % 3 == 0) //is it March, June, September or December (i.e. is the month divisible by 3)
+            {
+                Console.WriteLine("Please input the day of the month on which you were born:");
+                day = Convert.ToInt32(Console.ReadLine());
+            }
+            if (month < 3)
+            {
+                season = "winter";
+            }
+            else if (month == 3)
+            {
+                if (day < 21)
+                {
+                    season = "winter";
+                }
+                else
+                {
+                    season = "spring";
+                }
+            }
+            else if (month < 6)
+            {
+                season = "spring";
+            }
+            else if (month == 6)
+            {
+                if (day < 21)
+                {
+                    season = "spring";
+                }
+                else
+                {
+                    season = "summer";
+                }
+            }
+            else if (month < 9)
+            {
+                season = "summer";
+            }
+            else if (month == 9)
+            {
+                if (day < 21)
+                {
+                    season = "summer";
+                }
+                else
+                {
+                    season = "autumn";
+                }
+            }
+            else if (month < 12)
+            {
+                season = "autumn";
+            }
+            else if (month > 12)
+            {
+                Console.WriteLine("Please use the Earth calendar next time.");
+            }
+            else
+            {
+                if (day < 21)
+                {
+                    season = "autumn";
+                }
+                else
+                {
+                    season = "winter";
+                }
+            }
+            Console.WriteLine("You were born in the " + season + ".");
+        }
+    }
+}
