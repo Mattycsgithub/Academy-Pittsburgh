@@ -1,0 +1,971 @@
+using System;
+namespace MontyPythonandtheHolyGrail
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Monty Python and the Holy Grail Monti Python ik den Holi Grailen");
+            Console.ReadLine();
+            Console.WriteLine("With... Wik");
+            Console.ReadLine();
+            Console.WriteLine("Also appearing... Also wik");
+            Console.ReadLine();
+            Console.WriteLine("Also also appearing... Also also wik");
+            Console.ReadLine();
+            Console.WriteLine("Camera Operator... Wi not trei a holiday in Sweden this yer");
+            Console.ReadLine();
+            Console.WriteLine("Sound Recordist... See the loveli lakes");
+            Console.ReadLine();
+            Console.WriteLine("Continuity... The wonderful telephone system");
+            Console.ReadLine();
+            Console.WriteLine("Assistant Art Director... And mani interesting furry animals");
+            Console.ReadLine();
+            Console.WriteLine("With special extra thanks to... Including the majestik moose");
+            Console.ReadLine();
+            Console.WriteLine("Songs...  A moose once bit my sister");
+            Console.ReadLine();
+            Console.WriteLine("Costume Designer...  No realli!  She was Karving her initials on the moose with the sharpened end of an interspace toothbrush given her by Svenge - her brother-in-law- an Oslo dentist and star of many Norweigian movies: \"The Hot Hands of an Oslo Dentist\", \"Fillings of Passion\", \"The Huge Molar of Horst Nordfink\"...");
+            Console.ReadLine();
+
+            Console.WriteLine("Would you like to sack those responsible for the subtitles and apologize for them? Type (Yes)\"Y\" or (No)\"N\"");
+            string key = Console.ReadKey().Key.ToString();
+            if (key.ToUpper() == "Y")
+            {
+                Console.WriteLine();
+                Console.WriteLine("You have apologized for the fault in the subtitles.  Those responsible have been sacked!");
+            }
+            else
+            {
+                Console.WriteLine();
+                Console.WriteLine("You did not sack those responsible.  You have been sacked.");
+                Console.ReadLine();
+                Console.WriteLine();
+                Console.WriteLine("Your credits have come to an end.");
+                Console.ReadLine();
+                return;
+            }
+
+            Console.WriteLine();
+            Console.WriteLine("Mynd you, moose bites Kan be pretti nasti");
+            Console.ReadLine();
+            Console.WriteLine();
+
+            Console.WriteLine("Would you like to sack those responsible for sacking the people who have just been sacked and apologize for them? Type (Yes)\"Y\" or (No)\"N\"");
+            string key2 = Console.ReadKey().Key.ToString();
+            if (key2.ToUpper() == "Y")
+            {
+                Console.WriteLine();
+                Console.WriteLine("You have apologized for the fault in the subtitles still.  Those responsible for sacking those have just been sacked have been sacked!");
+                Console.WriteLine();
+            }
+            else
+            {
+                Console.WriteLine();
+                Console.WriteLine("You did not sack those responsible for sacking the people who have just been sacked.  You have been sacked.");
+                Console.ReadLine();
+                Console.WriteLine();
+                Console.WriteLine("Your credits have come to an end.");
+                Console.ReadLine();
+                return;
+            }
+
+            Console.WriteLine("Production Manager...Moose Trained by...");
+            Console.ReadLine();
+            Console.WriteLine("Lighting Cameraman... Moose Costumes...");
+            Console.ReadLine();
+            Console.WriteLine("Designer... Moose trained to mix concrete and sign complicated insurance forms by...");
+            Console.ReadLine();
+            Console.WriteLine("Editor... Antler care by...");
+            Console.ReadLine();
+
+            Console.WriteLine("Would you like to sack the directors of the game hired to continue the credits after those responsible for the sacking the people who had just been sacked were sacked and make it known that it has been done thus changing format of the credits completely? Type (Yes)\"Y\" or (No)\"N\"");
+            string key3 = Console.ReadKey().Key.ToString();
+            if (key3.ToUpper() == "Y")
+            {
+                Console.WriteLine();
+                Console.WriteLine("You have sacked the directors of the game.  The credits have been completed in an entirely different style at great expense and at the last minute.");
+                Console.WriteLine();
+            }
+            else
+            {
+                Console.WriteLine();
+                Console.WriteLine("You did not sack the directors of the game.  They have instead sacked you.");
+                Console.ReadLine();
+                Console.WriteLine();
+                Console.WriteLine("Your credits have come to an end.");
+                Console.ReadLine();
+                return;
+            }
+
+            Console.WriteLine("Executive Producer... 'RALPH' THE WONDER LLAMA");
+            Console.ReadLine();
+            Console.WriteLine("Producer...MERLE Z. LLAMA IX");
+            Console.ReadLine();
+            Console.WriteLine("Directed by...7600 BATTERY LLAMAS FROM LLAMA 'FRESH-FARMS' LTD NEAR PARAGUAY...");
+            Console.ReadLine();
+            Console.WriteLine("ENGLAND 932 AD");
+            Console.ReadLine();
+            Console.WriteLine("Thou 'King Arthur' and your faithful servent patsy gallop up to an ominously large castle.");
+            Console.ReadLine();
+            Console.WriteLine(" 'Halt! Who goes there!' shouts the tower guard.");
+            Console.ReadLine();
+            Console.WriteLine(" 'It is I, Arthur, Son of Uther Pendragon from the Castle of Camelot, king of the Britons, defeater of the Saxons, sovereign of all England', thou reply.");
+            Console.ReadLine();
+            Console.WriteLine(" 'Pull the other one.' the guard replies");
+            Console.ReadLine();
+            Console.WriteLine("'I am, and this is my trusty servent, Patsy.  We have ridden the length and breadth of the land in search of knights who will join me at my court at Camelot. I must speak with your lord and master!'");
+            Console.ReadLine();
+            Console.WriteLine("The tower guard questions you on your stead. 'What ridden on a horse?' ");
+            Console.ReadLine();
+            Console.WriteLine(" 'Yes' thou replies' ");
+            Console.ReadLine();
+            Console.WriteLine(" 'Your using coconuts! the guard replies.");
+            Console.ReadLine();
+            Console.WriteLine(" 'What?!' thou replies ");
+            Console.ReadLine();
+            Console.WriteLine("'You have two halves of a coconunt and you're banging them together!'");
+            Console.ReadLine();
+            Console.WriteLine(" 'So!' thee exclaims. 'We have ridden since the snows of this winter covered this land.  Through the Kindom of Mercia!' ");
+            Console.ReadLine();
+            Console.WriteLine(" 'Whered you get the coconuts!' the guard exclaims. ");
+            Console.ReadLine();
+            Console.WriteLine(" 'We found them.' ye reply. ");
+            Console.ReadLine();
+            Console.WriteLine(" 'Found them? In Mercia? The coconut is tropical.");
+            Console.ReadLine();
+            Console.WriteLine(" 'What do you mean?' thou reply.");
+            Console.ReadLine();
+            Console.WriteLine(" 'Well this is a temperate zone.' the guard questions again.");
+            Console.ReadLine();
+            Console.WriteLine(" 'The swallow may fly south with the sun or the house martin or the plover may seek warmer climes in winter yet theses are not strangers to our land.' thee reply again ");
+            Console.ReadLine();
+            Console.WriteLine("Once again debating, 'Are you suggesting coconuts migrate?' the guard implies.");
+
+            Console.WriteLine("Does thee wish to carry on thy conversation ast thou are getting no where with the guards? 'Y' (Yes) 'N' (No)");
+            string key4 = Console.ReadKey().Key.ToString();
+            if (key4.ToUpper() == "Y")
+            {
+                Console.WriteLine();
+                Console.WriteLine("'Not at all they could be carried' thee replies.");
+                Console.ReadLine();
+                Console.WriteLine("'What? A swallow carrying a coconut?', the guard exclaims.");
+                Console.ReadLine();
+                Console.WriteLine("'It could be grip it by the husk.' thee wagers.");
+                Console.ReadLine();
+                Console.WriteLine("'Its' not a question of where he grips it. Its a simple question of weight ratios. A five ounce bird could not carry a one-pound coconut' the guard explains");
+                Console.ReadLine();
+                Console.WriteLine("'Well it doesn't matter.  Will you go and tell your master that Arthur from the court at camelot is here?' trying to gain an accord.");
+                Console.ReadLine();
+                Console.WriteLine("The guard continues to explain 'Listen in order to maintain air-speed velocity a swallow needs to beat its wings 43 times every second right? Am I right'");
+                Console.ReadLine();
+                Console.WriteLine("'Please! I am not interested!', thou exclaims.");
+                Console.ReadLine();
+                Console.WriteLine("'It could be carried by an African swallow.' the second guard explains.");
+                Console.ReadLine();
+                Console.WriteLine("'Oh yes! An African swallow, maybe. Not a european swallolw.  That's my point.' the second guard finally agrees.");
+                Console.ReadLine();
+                Console.WriteLine("'Will you ask your master if he wants to join my court at Camelot?!'");
+                Console.ReadLine();
+                Console.WriteLine("Ignoring the first guard replys to the second, 'But then, of course,... African swallows are non-migratory'");
+                Console.ReadLine();
+                Console.WriteLine("'Oh yes' the second agrees again. 'So they couldn't bring it back again, anyway... Wait a minute! Supposing two swallows carried it together?'");
+                Console.ReadLine();
+
+                Console.WriteLine("Does thee wish to carry on ye conversation in regards to swallows and coconuts? 'Y'(Yes) 'N'(No)");
+                string key5 = Console.ReadKey().Key.ToString();
+
+                if (key5.ToUpper() == "N")
+                {
+                    Console.WriteLine();
+                    Console.WriteLine("Ye carry on yee journey whilst listening to the two gaurds arguing over the nationalities of swallows.");
+                    Console.ReadLine();
+                    Console.WriteLine();
+                    Console.WriteLine("Your adventure continues.");
+                    Console.ReadLine();
+                }
+                else
+                {
+                    Console.ReadLine();
+                    Console.WriteLine("'No, they'd have to have it on a line.' the first digresses'");
+                    Console.ReadLine();
+                    Console.WriteLine("The second succincts 'Simple.  They'd just use a strand of creeper.");
+                    Console.ReadLine();
+                    Console.WriteLine("'What, held under the dorsal guiding feathers?' The first asks.");
+                    Console.ReadLine();
+                    Console.WriteLine("'Well why not?' the second questions.");
+                    Console.WriteLine();
+                    Console.WriteLine("As you continue into the educated debate much further, thou hast gained a master knowledege of coconut and swallow migratory patterns based on avarian continents.");
+                    Console.ReadLine();
+                    Console.WriteLine("However you have wasted precious time and have gained no knights over the ensuing debate which takes several weeks.");
+                    Console.ReadLine();
+                    Console.WriteLine("Your adventure has come to an end.");
+                    Console.ReadLine();
+                    return;
+                }
+            }
+            if (key4.ToUpper() == "N")
+            {
+                Console.WriteLine();
+                Console.WriteLine("You continue on with your journey realizing this is a pointless conversation about coconuts and migration.");
+                Console.WriteLine();
+            }
+
+
+            Console.WriteLine("Ye approaches a wretched town badly affected by the black death scourging the land. You hear the cries of misery, death, and dispair as your ride through town ");
+            Console.ReadLine();
+            Console.WriteLine("'Bring out yer dead!' ::CLANK!::");
+            Console.ReadLine();
+            Console.WriteLine("'Bring out yer dead!' ::CLANK!::");
+            Console.ReadLine();
+            Console.WriteLine("'Bring out yer dead!' ::CLANK!::");
+            Console.ReadLine();
+            Console.WriteLine("'Bring out yer dead!' ::CLANK!::");
+            Console.ReadLine();
+            Console.WriteLine("'Bring out yer dead!' ::CLANK!::");
+            Console.ReadLine();
+            Console.WriteLine("'Bring out yer dead!' ::CLANK!::");
+            Console.ReadLine();
+            Console.WriteLine("'Bring out yer dead!' ::CLANK!::");
+            Console.ReadLine();
+            Console.WriteLine("'Bring out yer dead!' ::CLANK!:: 'Nine Pence'");
+            Console.ReadLine();
+            Console.WriteLine("'Bring out yer dead!' ::CLANK!::");
+            Console.ReadLine();
+            Console.WriteLine("'Bring out yer dead!' ::CLANK!::");
+            Console.ReadLine();
+            Console.WriteLine("'Bring out yer dead!' ::CLANK!::");
+            Console.ReadLine();
+            Console.WriteLine("'Bring out yer dead!' ::CLANK!:: ::MRREOW!::");
+            Console.ReadLine();
+            Console.WriteLine("'Bring out yer dead!' ::CLANK!:: ::MRREOW!::");
+            Console.ReadLine();
+            Console.WriteLine("'Heres one!''Nine Pence' 'Im not dead! 'What?' 'Nothing here's your nine pence' 'I'm not dead! Here. He says he's not dead not dead' 'Yes he is' 'I'm not!' 'He isn't?''He will be soon. He's very ill.'  'I'm getting better!' 'No your not you'll be stone dead in a moment.'  'I can't take him like that its against regulations' 'I don't want to go on the cart!'");
+            Console.ReadLine();
+
+
+            Console.WriteLine("You hear the cries of inhumanity! Do you stop to help this poor soul and clear violation of dead collection regulation article 5 subsection A? 'Y'(Yes) 'N' (No)");
+            string key6 = Console.ReadKey().Key.ToString();
+            if (key6.ToUpper() == "N")
+            {
+                Console.WriteLine();
+                Console.WriteLine("You realize that your divine path is too great and that it seems a minor infraction given the situation.");
+                Console.ReadLine();
+                Console.WriteLine();
+            }
+            else
+            {
+                Console.WriteLine();
+                Console.WriteLine("You have righted a great injustice and stopped a clear violation of the law of the land.");
+                Console.ReadLine();
+                Console.WriteLine("However in mingling with the lesser peasants, you have become ill and can feel the black death consumming your body.");
+                Console.ReadLine();
+                Console.WriteLine("You die in your bed in your castle faithful Patsy by your side and become known as 'Arthur the Benevolent'.");
+                Console.ReadLine();
+                Console.WriteLine("Your life has come to an end.");
+                Console.ReadLine();
+                return;
+            }
+
+            Console.ReadLine();
+            Console.WriteLine("You hear the continued sound of death as you continue on your journey.");
+            Console.ReadLine();
+            Console.WriteLine("'Don't be such a baby' 'I can't take him.' 'I feel fine.' 'Well do us a favor' 'I can't' 'Can you hang around a couple of minutes? He won't be long.' ' Got to go to the Robinsons' They've lost nine today.' 'When's your next round?' 'Thurday' 'I think I'll go for a walk' ' You're not fooling anyone you know. Look isn't there something you can do?' 'I feel happy! I feel happy! ::THAP!!:: ::man grunts:: 'Thanks very much' 'Not at all. see you on Thursday.' 'Right.' ");
+            Console.ReadLine();
+            Console.WriteLine("You gallop through the town with haste as id destiny itself is guiding you.");
+            Console.ReadLine();
+            Console.WriteLine("'Who's that then?'I don't know. Must be a king.' 'Why' 'He hasn't got shit all over him.'");
+            Console.ReadLine();
+
+
+            Console.WriteLine("You gallop valliantly through the field of sod and muck workers and see another large castle in the distance.");
+            Console.ReadLine();
+            Console.WriteLine("You stop to ask one of the peasants for help. 'Old Woman!'");
+            Console.ReadLine();
+            Console.WriteLine("'Man! he replies.");
+            Console.ReadLine();
+            Console.WriteLine("'Man sorry. What knight lives in that castle over there?' thee says.");
+            Console.ReadLine();
+            Console.WriteLine("'I'm 37!' He exclaims.");
+            Console.ReadLine();
+            Console.WriteLine("'What you reply?' perplexed by the answer.'");
+            Console.ReadLine();
+            Console.WriteLine("'I'm 37. I'm not old.' he replies.");
+            Console.ReadLine();
+            Console.WriteLine("'Well I can't just call you 'man'.' you state.");
+            Console.ReadLine();
+            Console.WriteLine("'You could say Dennis.'");
+            Console.ReadLine();
+            Console.WriteLine("'I didn't know you were called Dennis.' you explain.");
+            Console.ReadLine();
+            Console.WriteLine("'Well you didn't bother to find out did you?' he replies again.");
+            Console.ReadLine();
+            Console.WriteLine("'I did say sorry about the 'old woman,' but from behind you looked...' ye replies to be quickly interupted.");
+            Console.ReadLine();
+            Console.WriteLine("'What I object to is you automatically treat me like an inferior.' Dennis states.");
+            Console.ReadLine();
+            Console.WriteLine("'Well I am king.' ye replies.");
+            Console.ReadLine();
+            Console.WriteLine("King?");
+            Console.ReadLine();
+            Console.WriteLine("'Oh king eh? Very nice. How did you get that? By exploiting the workers! By hanging on to outdated imperialist dogma which perpetuates the economic and social differences un our society! If there's ever going to be an progress...' Dennis is interupted.");
+            Console.ReadLine();
+            Console.WriteLine("Dennis, there's some lovely filth down here. Ooh! How do you do?', a homely woman replies.");
+            Console.ReadLine();
+            Console.WriteLine("'How do you do, good lady? I am Arthur, King of the Britons.  Whose castle is that?'");
+            Console.ReadLine();
+            Console.WriteLine("'King of the who?' she questions.");
+            Console.ReadLine();
+            Console.WriteLine("'The Britons'. ye state.");
+            Console.ReadLine();
+            Console.WriteLine("'Who are the Britons?' she states puzzled.");
+            Console.ReadLine();
+            Console.WriteLine("'Well we are.  We're all Britions. And I am you king.', you explain.'");
+            Console.ReadLine();
+            Console.WriteLine("'I didn't know we had a king. I thought we were an autonomous collective.' she replies.");
+            Console.ReadLine();
+            Console.WriteLine("'You're fooling yourself.  We're living in a dictatorship. A self perpetuating autocracy in which the working class in which...', Dennis is quickly interupted.");
+            Console.ReadLine();
+            Console.WriteLine("'Ah there you go! Bringing class into it again.' the woman replies.");
+            Console.ReadLine();
+            Console.WriteLine("That's what it's all about.  If only people would...' now ye interupts Dennis.");
+            Console.ReadLine();
+            Console.WriteLine("Please! please good people I am in haste. Who lives in that castle?");
+            Console.ReadLine();
+            Console.WriteLine("'No one lives there' the woman explains.'");
+            Console.ReadLine();
+            Console.WriteLine("'Then who is your lord? you reply.'");
+            Console.ReadLine();
+            Console.WriteLine("'We dont have a lord.' the woman explains again.");
+            Console.ReadLine();
+            Console.WriteLine("'What?', you exclaim.");
+            Console.ReadLine();
+            Console.WriteLine("I told you.  We're an anarco-syndicalist commune. We take it in turnsto act as a sort of executive officer for the week... Dennis is explaining");
+            Console.ReadLine();
+            Console.WriteLine("'Yes.' you mutter.");
+            Console.ReadLine();
+            Console.WriteLine("'But all the decision of that officer have tot be ratified at a special biweekly meeting...' Dennis continues explaining...");
+            Console.ReadLine();
+            Console.WriteLine("'Yes I see!', raising your your voice.'");
+            Console.ReadLine();
+            Console.WriteLine("'By a simple majority in the case of purely internal affairs.' Dennis keeps explaining.");
+            Console.ReadLine();
+            Console.WriteLine("'Be Quiet!' ye commands.");
+            Console.ReadLine();
+            Console.WriteLine("Dennis continues on, 'By a two-thirds majority in the case of a vacance.'");
+            Console.ReadLine();
+            Console.WriteLine("'Be quiet! I order you to be quiet! ye commands again.");
+            Console.ReadLine();
+            Console.WriteLine("'Order? Who does he think he is?' the woman boldly states.");
+            Console.ReadLine();
+            Console.WriteLine("'I am your king!' you exclaim.");
+            Console.ReadLine();
+            Console.WriteLine("'Well I didn't vote for you.', the woman argues.");
+            Console.ReadLine();
+            Console.WriteLine("'You don't vote for kings' ye snarkily reply.'");
+            Console.ReadLine();
+            Console.WriteLine("'How did you become king then?', she questions again.");
+            Console.ReadLine();
+            Console.WriteLine("'The Lady of the Lake, her arm clad in the purest shimmering samite, held aloft Excalibur from the bosom of the water signifying, by divine providence, that I, Arthur, was to carry Excalibur.  That is why I'm your king!' explaining your divine righ to rule.");
+            Console.ReadLine();
+            Console.WriteLine("Listen. Strange women lying in ponds, distributing swords, is no basis for a system of government.  Supreme executive power derives from a mandate from the masses.  not from some farcical aquatic cereomy.' Dennis mocks.");
+            Console.ReadLine();
+            Console.WriteLine("Be quiet! ye command once again.");
+            Console.ReadLine();
+            Console.WriteLine("Dennis continues, 'You can't expect to wield supreme executive power just cuz some watery tart threw a sword at you. ");
+            Console.ReadLine();
+            Console.WriteLine("Filled with rage ye yells, 'Shut up!'.");
+            Console.ReadLine();
+            Console.WriteLine("Dennis is undisuaded, I mean if I went around saying I was an emperor because some moisened bint had lobbed a scimitar at me, they'd put me away!");
+            Console.ReadLine();
+            Console.WriteLine("Thou march towardst Dennis yelling, 'Shut up! Will you shut up?!'");
+            Console.ReadLine();
+
+            Console.WriteLine("Do you teach this lowly serf a lesson and flog him in public? 'Y'(Yes) 'N' (No)");
+            string key7 = Console.ReadKey().Key.ToString();
+            if (key7.ToUpper() == "N")
+            {
+                Console.WriteLine("Dennis's persistance ensues, 'Now we see the violence inherent in the system!'");
+                Console.ReadLine();
+                Console.WriteLine("Shut up! ye shouts grabbing Dennis.");
+                Console.ReadLine();
+                Console.WriteLine("Dennis is mad with righteousness, 'Come see the violence inherent in the system! Help I'm being repressed!");
+                Console.ReadLine();
+                Console.WriteLine("'Bloody peasent' you let Dennis go displying your benevolent wisdom and mercy.");
+                Console.ReadLine();
+                Console.WriteLine("The mad shouting from Dennis continues,'What a giveaway.  Did you here that eh?  Thats what I'm on about.  Did you see him repressing me? You saw it didn't you!");
+            }
+            else
+            {
+                Console.WriteLine("Dennis's persistance ensues, 'Now we see the violence inherent in the system!'");
+                Console.ReadLine();
+                Console.WriteLine("Shut up! ye shouts grabbing Dennis.");
+                Console.ReadLine();
+                Console.WriteLine("Dennis is mad with righteousness, 'Come see the violence inherent in the system! Help I'm being repressed!");
+                Console.ReadLine();
+                Console.WriteLine("You raise your gaunlet stricking Dennis across his face.");
+                Console.ReadLine();
+                Console.WriteLine("Dennis falls to the ground as the sod wokers rush to attack thee.");
+                Console.ReadLine();
+                Console.WriteLine("Ye reaches for excaliber but you are already struck to from behind.");
+                Console.ReadLine();
+                Console.WriteLine("You lie there in agony while the sod workers strike you down in an angry mob. Patsy joining in realizing his freedom at hand and your true opinion of his equals.");
+                Console.ReadLine();
+                Console.WriteLine("You have died.  England becomes an anarco-syndicalist commune under the great teachings of Dennis the Philosopher King and an early renaissance of enlightenment blossoms.  You are known thoughout history as 'Arthur The Tyrant'.");
+                Console.ReadLine();
+                Console.WriteLine("Your life and monarchy has ended.");
+                Console.ReadLine();
+                return;
+            }
+            Console.ReadLine();
+            Console.WriteLine("You and Patsy gallop away slightly preturbed but yet feeling a sense of pride in your divine patience.  Patsy nods his head to his leige.");
+            Console.ReadLine();
+            Console.WriteLine("You and Patsy gallop through the forrest dillegently on you adventure in search of more knights.");
+            Console.ReadLine();
+            Console.WriteLine("::You hear the sounds of a great battle in the closing distance.::");
+            Console.ReadLine();
+            Console.WriteLine("You aproach a great duel between a green and black knight. Finally you have found some knights! ::Both Scream:: The green swipes at the black.  They both take a second swing with their greatswords. The metal clashes as they slide there swords towards the hull of their blades.");
+            Console.ReadLine();
+            Console.WriteLine("The green knight makes a swift maneuver striking the black knight in the helmet. Stunned the black knight falls back but regains his footing as the green knight strikes from up high.");
+            Console.ReadLine();
+            Console.WriteLine("The black knight parries and strikes the green knight in the gut with the hilt of his sword.  The green knight falls to the ground and the black knight now tries to drive the killing blow.");
+            Console.ReadLine();
+            Console.WriteLine("The green knight rolls out of the way.  They reclash their swords as they twirl looking for the right moment.  The black takes a cheap shot and nails the green knight in his loins. While wincing in pain the green knight drops his sword and black knight goes for the killing blow once again.");
+            Console.ReadLine();
+            Console.WriteLine("The green knight valiantly dodges again and counters the black knight with a gauntlent strike to his helmet.  The black knight falls to his back laying prone on the ground.  The green knight with divine speed grabs his mace and goes for the kill from above.");
+            Console.ReadLine();
+            Console.WriteLine("The black knight raises his sword with both hands to block the attack and the mace becomes in contact with the sword.  The force of the attack is so strong that the green knight is still in an uncontrollable forward motion.  They black knight hurls the green knight over top of his prone body.");
+            Console.ReadLine();
+            Console.WriteLine("The green knight quickly recovers and strikes hard from above this time with the sword and mace becoming entangled.  They wrestle back and forth the green knight over top of the black.  The black knight sucessfull pushes his opponent off to the side with brute like strength and the green knight loses his mace.");
+            Console.ReadLine();
+            Console.WriteLine("Like a mad devil the green knight brandishes his ax and charges the black knight who had regained his footing and his sword.  The black knight lunges his sword with perfect precision like a spear through the air the small slot in the green's helmet. The sword pierces through as blood gushes out and he falls dead to the ground. ::Gurgling Thud::  The black knight is victorious!  The black knight rebrandishes his great sword and stand in a ominous sentinal like guard blocking the path ahead.");
+            Console.ReadLine();
+            Console.WriteLine("You heel your mighty stead as thou approach the black knight, 'You fight the the strength of many men sir knight.");
+            Console.ReadLine();
+            Console.WriteLine("An ominous silent stare is your only reply.");
+            Console.ReadLine();
+            Console.WriteLine("'I am Arthur King of the Britons.' thou proclaims.");
+            Console.ReadLine();
+            Console.WriteLine("The black knights dark sentinal stare remains.");
+            Console.ReadLine();
+            Console.WriteLine("I seek the finest and the bravest knights in the land to join me in my court at camelot.");
+            Console.ReadLine();
+            Console.WriteLine("No response.");
+            Console.ReadLine();
+            Console.WriteLine("'You have proved your self worthy.  Will you join me?' thou asks.");
+            Console.ReadLine();
+            Console.WriteLine("Nothing but silence.");
+            Console.ReadLine();
+            Console.WriteLine("'You make me sad. So be it. Come Patsy!', thou commands.");
+            Console.ReadLine();
+            Console.WriteLine("'NONE SHALL PASS!' the black knight finally responds.");
+            Console.ReadLine();
+            Console.WriteLine("'What?!' thou exclaims.");
+            Console.ReadLine();
+            Console.WriteLine("'NONE SHALL PASS!' the black knight commands again.");
+            Console.ReadLine();
+            Console.WriteLine("I have no quarrel with you, good sir knight, but I must cross this bridge.', thou explains.");
+            Console.ReadLine();
+            Console.WriteLine("'THEN YOU SAHLL DIE!', the black knight proclaims.");
+            Console.ReadLine();
+            Console.WriteLine("'I command you, as King of the Britons, to stand aside.', thou command with authority.");
+            Console.ReadLine();
+            Console.WriteLine("'I MOVE FOR NO MAN.', proclaims the black knight.");
+            Console.ReadLine();
+
+            Console.WriteLine("Do you brandish excalibur and fight the black knight? 'Y'(Yes) 'N' (No)");
+            string key8 = Console.ReadKey().Key.ToString();
+            if (key8.ToUpper() == "Y")
+            {
+                Console.WriteLine("'SO BE IT!' thou yells.");
+                Console.ReadLine();
+                Console.WriteLine("The fight begins.  Th e black knight attack while thou blocks easily with one hand.  Thou parries but it is blocked.");
+                Console.ReadLine();
+                Console.WriteLine("The black knight counters with a flurry of attacks. Six strikes come your way as you block, parry, and dodge each one.  Thou counters by striking the black knight's helmet with the hilt of thine sword.  :;BONG!:: The sound rattles the black knight but he keeps attacking.");
+                Console.ReadLine();
+                Console.WriteLine("Three more attacks come thine way.  You dodge and parry them with ease as the last parry lops off the black knights left arm. ::FFftttTT THUD!::  The black knights arm and socket gush blood from the wound.");
+                Console.ReadLine();
+                Console.WriteLine("'Now, stand aside, worthy adversary.' as thou proclaims victory.");
+                Console.ReadLine();
+                Console.WriteLine("'Tis but a scratch.' the black knight states.");
+                Console.ReadLine();
+                Console.WriteLine("'A scratch?! you arm's off.', thou blantantly points out.");
+                Console.ReadLine();
+                Console.WriteLine("'No it isnt.'  The black knight ignorantly replies.");
+                Console.ReadLine();
+                Console.WriteLine("'Well whats that then?!', thou points to the his arm on the ground.");
+                Console.ReadLine();
+                Console.WriteLine("'I've had worse.'the black knight replies.");
+                Console.ReadLine();
+                Console.WriteLine("'You liar!', thou proclaims.");
+                Console.ReadLine();
+                Console.WriteLine("'Come on you pansy.', the black knight mocks as he strikes again repeatedly.  He strikes three times as thou parries with ease.  He charges one last time as thou counters lopping off his other arm. ::FFftttTT THUD!::");
+                Console.ReadLine();
+                Console.WriteLine("'Victory is mine!', you proclaim as you kneel to thank the divine.  'We thank thee Lord that in thy...'  ::CLANK:: Your prayer is interupted by a swift kick to the head from the black knight.");
+                Console.ReadLine();
+                Console.WriteLine("'Come on then.',the black knight mocks.");
+                Console.ReadLine();
+                Console.WriteLine("What?! thou screams in perplexity as the black knight kicks you repeated while on the ground. ::HAVEATYOU:: 'You are indeed brave, sir knight, but the fight is mine.'  as thou easily stands to thine feet.");
+                Console.ReadLine();
+                Console.WriteLine("'Oh had enough eh?, the black knight mocks again.");
+                Console.ReadLine();
+                Console.WriteLine("Look you stupid bastard! You've got no arms left.  thou states obviously.");
+                Console.ReadLine();
+                Console.WriteLine("'Yes I have.', the black night claims.");
+                Console.ReadLine();
+                Console.WriteLine("'Look!', thou yells");
+                Console.ReadLine();
+                Console.WriteLine("'Tis but a flesh wound.', the black knight claims.");
+                Console.ReadLine();
+                Console.WriteLine("'Look stop that. thou requests");
+                Console.ReadLine();
+                Console.WriteLine("The black knight continually kicks you in thine rear mocking, 'Chicken, Chicken!'.");
+                Console.ReadLine();
+                Console.WriteLine("'Look I'll have your leg. Right!' thoust claims in frustration as you lop off the right leg of the knight as he goes to kick you once again.  ::FFftttTT THUD!:: The knights legand socket gush blood as he hops on his only remaining limb.");
+                Console.ReadLine();
+                Console.WriteLine("'Right! I'll do you for that.' the black knight jestingly proclaims.");
+                Console.ReadLine();
+                Console.WriteLine("'You'll what?! thou shouts in disbelief.");
+                Console.ReadLine();
+                Console.WriteLine("'Come here' the black knight states as he hobbles towards you on one foot.");
+                Console.ReadLine();
+                Console.WriteLine("'What are you gonna do? Bleed on me?', thou jests.");
+                Console.ReadLine();
+                Console.WriteLine("'I'm invincinble!' the black knight proclaims.");
+                Console.ReadLine();
+                Console.WriteLine("'You're a loony.' thoust mocks.'");
+                Console.ReadLine();
+                Console.WriteLine("'The black knight always triumps. Have at you! Come on then. ::FFftttTT THUD!:: The last remaining limb of the knight hits the ground as well as his now quadrapalegic body. 'All right well call it a draw' the black knight finally resolves.");
+                Console.ReadLine();
+                Console.WriteLine("'Come Patsy!',thoust commands after a tiresome and odd duel.");
+                Console.ReadLine();
+                Console.WriteLine("The black knight continues to mock as you gallop off inot the distance. 'Oh I see Running away, eh?  You yello bastards!  Come back her and take whats coming to you. I'll bite your legs off!'");
+                Console.ReadLine();
+                Console.WriteLine("Victory is your and your path secured.  Your adventure continues.");
+                Console.ReadLine();
+            }
+            else
+            {
+                Console.WriteLine("There is clearly no other path around to continue the jouney.");
+                Console.ReadLine();
+                Console.WriteLine("'You return to your castle and become known as 'Arthur the Pansy'.");
+                Console.ReadLine();
+                Console.WriteLine("Thine adventure is over.");
+                Console.ReadLine();
+                return;
+            }
+
+
+
+            Console.WriteLine("You gallop forwar on your destined journey as you approach another small village.  as you trot closer you heart the shooutin g of an angry mob.");
+            Console.ReadLine();
+            Console.WriteLine("'A witch!'  'A witch!' 'A witch!' 'A witch!''A witch!''A witch!' 'We found a witch!' 'A witch!''A witch!''A witch!''A witch!''A witch!''A witch!''We found a witch!''We found a witch!''A witch!'  As you encroach you see the angry mob approach white knight. 'We have found a witch may we burn her! 'Burn her!' 'Burn her!'Burn her!''Burn her!''Burn her!''Burn her!'");
+            Console.ReadLine();
+            Console.WriteLine("'How do you know she is a witch?', the knight questions the crowd.");
+            Console.ReadLine();
+            Console.WriteLine("'Shelooks like one!' someone shouts");
+            Console.ReadLine();
+            Console.WriteLine("'Bring her forward,' the knight requests.");
+            Console.ReadLine();
+            Console.WriteLine("'I am not a witch. I am not a witch!', the woman defends.");
+            Console.ReadLine();
+            Console.WriteLine("'But you are dressed as one.' the knight replies.");
+            Console.ReadLine();
+            Console.WriteLine("'They dressed me up like this.', the woman explains.");
+            Console.ReadLine();
+            Console.WriteLine("'We didn't!', the mob murmurs.");
+            Console.ReadLine();
+            Console.WriteLine("'And this isn't my nose.  Its a false one.', the woman explains.");
+            Console.ReadLine();
+            Console.WriteLine("The wise knight inspects the womans nose and discovers the nose is indeed false. 'Well?' the knight asks the crowd.");
+            Console.ReadLine();
+            Console.WriteLine("'Well we did do the nose.' one of the leaders explains.");
+            Console.ReadLine();
+            Console.WriteLine("'The nose?' the wise knight questions again as to infer more.");
+            Console.ReadLine();
+            Console.WriteLine("The leader explains further, 'And the hat but she is a witch.'  The mob replies in unison 'Burn her!''Burn her!''Burn her!'.");
+            Console.ReadLine();
+            Console.WriteLine("'Did you dress her up like this?' the wise knight questions once again.");
+            Console.ReadLine();
+            Console.WriteLine("The mob yells, 'No!''No!''No!''No!''No!''No!''Yes!'Yes!'Yes!''A bit.''A bit.''A bit.''She has got a wart!', as they all point to her face.");
+            Console.ReadLine();
+            Console.WriteLine("'What makes you think she is a witch?' the knight questions again.");
+            Console.ReadLine();
+            Console.WriteLine("'Well, she turned me into a newt.', one replies.");
+            Console.ReadLine();
+            Console.WriteLine("'A newt?' the knight questions once again.");
+            Console.ReadLine();
+            Console.WriteLine("'I got better.', the one replies awkwardly.");
+            Console.ReadLine();
+            Console.WriteLine("The mob replies in angry screams, 'Burn her anyway!''Burn her!''Burn her!''Burn her!''Burn her!''Burn her!''Burn her!'");
+            Console.ReadLine();
+            Console.WriteLine("You approach across the crowd as the knight commands 'Quiet. There are ways of telling whether she is a witch.'.");
+            Console.ReadLine();
+            Console.WriteLine("The mob replies in suprise, ' 'Are there?' 'What are they?' 'Tell us.' 'Tell us.' 'Do they hurt?'!");
+            Console.ReadLine();
+            Console.WriteLine("'Tell me, what do you do with witches?' the knight replies.");
+            Console.ReadLine();
+            Console.WriteLine("The mob screams, 'Burn them!''Burn them!''Burn them!''Burn them!''Burn them!''Burn them!''Burn them!'");
+            Console.ReadLine();
+            Console.WriteLine("The knight asks yet another logical question,'And what do you burn apart from witches?'.");
+            Console.ReadLine();
+            Console.WriteLine("The leader shouts angrily, 'More witches!' 'Wood.' another replies.'");
+            Console.ReadLine();
+            Console.WriteLine("'So why do witches burn?' the knight concludes.");
+            Console.ReadLine();
+            Console.WriteLine(".....");
+            Console.ReadLine();
+            Console.WriteLine("There is a long pause across the perplexed crowd til one replies in a question, 'Cause, they're made of wood?.....' ");
+            Console.ReadLine();
+            Console.WriteLine("'Good' replies the knight' 'So how do we tell if she is made of wood?'");
+            Console.ReadLine();
+            Console.WriteLine("The leader replies, 'Build a bridge out of her.'");
+            Console.ReadLine();
+            Console.WriteLine("'Ah but can you not make bridges out of stone?' the knight questions.");
+            Console.ReadLine();
+            Console.WriteLine("'Oh yeah.' leader murmurs.");
+            Console.ReadLine();
+            Console.WriteLine("'Does wood sink in water?' the knight asks.");
+            Console.ReadLine();
+            Console.WriteLine("The mob quickly replies, 'No!'No!''It floats!'It floats!''Throw her into the pond!'");
+            Console.ReadLine();
+            Console.WriteLine("'What also floats in water?' the knight replies");
+            Console.ReadLine();
+            Console.WriteLine("The mob yells a flurry of answers, 'Bread!''Apples!'Very small rocks!''Cider!''Cherries!''Gravy!''Mud!''Churches!''Lead.");
+
+            Console.WriteLine("Many of these answers seem viable but your divine wisdom grants you the answer as you reply with what answer? 'B'(Bread)'A'(Apples)'V'(Very small rocks)'G'(Gravy)'D'(Duck)'M'(Mud)'C'(Churches!)'L'(Lead)'W'(Witches).");
+            string key9 = Console.ReadKey().Key.ToString();
+
+            if (key9.ToUpper() == "D")
+            {
+                Console.WriteLine();
+                Console.WriteLine("'Exactly!' the knight replies. So, logically?...");
+                Console.ReadLine();
+                Console.WriteLine("'If she weighs the same as a duck..... she's made of wood.' the leader answers.");
+                Console.ReadLine();
+                Console.WriteLine("The knight concludes, 'And therefore?....'.");
+                Console.ReadLine();
+                Console.WriteLine("...'A witch!''A witch!''A witch!''A witch!''A witch!'A witch!''A witch!''A witch!''A witch!''A witch!' the crowd yells in unison'.");
+
+                Console.ReadLine();
+                Console.WriteLine("We shall use my largest scales.' the knight replies.  The crowd moves the woman and a duck over to the scale and places them on each side. 'Remove the supports!' the knight commands.  The scales barely move as they teeter to perfect balance.");
+
+                Console.ReadLine();
+                Console.WriteLine("'Thats a fair cop.' the woman states.");
+                Console.ReadLine();
+                Console.WriteLine("The mob shouts in anger and excitement, 'A witch!''A witch!''A witch!''A witch!''Burn her!''Burn her!''Burn her!''Burn her!''Burn her!''Burn her!'.");
+                Console.ReadLine();
+                Console.WriteLine("Thine ordained wisdom has saved the town and you have gained the respect of the knight.");
+                Console.ReadLine();
+                Console.WriteLine("Thine adventure continues.");
+                Console.ReadLine();
+                Console.WriteLine("");
+
+            }
+            else
+            {
+
+
+                Console.ReadLine();
+                Console.WriteLine("'Incorrect!' the knight exclaims. 'It is a duck!'");
+                Console.ReadLine();
+                Console.WriteLine("'If she weighs the same as a duck..... she's made of wood.' the leader answers.");
+                Console.ReadLine();
+                Console.WriteLine("The knight concludes, 'And therefore?....'.");
+                Console.ReadLine();
+                Console.WriteLine("...'A witch!''A witch!''A witch!''A witch!''A witch!'A witch!''A witch!''A witch!''A witch!''A witch!' the crowd yells in unison'.");
+                Console.ReadLine();
+                Console.WriteLine("'We shall use my largest scales.' the knight replies.  The crowd moves the woman and a duck over to the scale and places them on each side. 'Remove the supports!' the knight commands.  The scales barely move as they teeter to perfect balance.");
+                Console.ReadLine();
+                Console.WriteLine("'Thats a fair cop.' the woman states.");
+                Console.ReadLine();
+                Console.WriteLine("The mob shouts in anger and excitement, 'A witch!''A witch!''A witch!''A witch!''Burn her!''Burn her!''Burn her!''Burn her!''Burn her!''Burn her!'. Yet as the you watch on the you observe that the scales are completely off balance.");
+                Console.ReadLine();
+                Console.WriteLine("'Wait! I Arthur, King of the Britons here by pardon the fair lady.  The scales are obviously inbalance and therefore cannot be a witch.");
+                Console.ReadLine();
+                Console.WriteLine("'The mob looks unto the scales and sadly dismisses the accusation.'");
+                Console.ReadLine();
+                Console.WriteLine("As you approch the woman beome enchanted by her beauty as if not drawn to her. 'What is your name fair maiden?");
+                Console.ReadLine();
+                Console.WriteLine("'Mazoe,' she replies. She ask you to come with her for saving her life and you comply. You vanish into the enchanted wood never to be seen again.");
+                Console.ReadLine();
+                Console.WriteLine("You become known as 'Arthur the Vanished'.");
+                Console.ReadLine();
+                Console.WriteLine("Your adventure has come to an end.");
+                Console.ReadLine();
+                return;
+            }
+
+
+            Console.ReadLine();
+            Console.WriteLine("'Who are you, who are so wise in the ways of science?' the white knight asks.");
+            Console.ReadLine();
+            Console.WriteLine("Thou replies, 'I am Arthur king of the Brittons.");
+            Console.ReadLine();
+            Console.WriteLine("The knight bows to one knee, 'My leige.'");
+            Console.ReadLine();
+            Console.WriteLine("'Good sir knight, will you come with me to Camdelot and join uis at the round table?' thou asks.");
+            Console.ReadLine();
+            Console.WriteLine("'My leige, I would be honored. the knight replies.");
+            Console.ReadLine();
+            Console.WriteLine("'What is your name?', thou asks.");
+            Console.ReadLine();
+            Console.WriteLine("'Bevedere, my leige.' the knight responds.");
+            Console.ReadLine();
+            Console.WriteLine("'Then I dub you 'Sir Bedevere knight of the Round Table' thou proclaims. ");
+            Console.ReadLine();
+            Console.WriteLine("Sir Bevedere joins your court as knight and soon their are many to follow: 'Sir Lancelot the Brave', 'Sir Gallahad the Pure', 'Sir Robin the Not-quite-so-brave-as-Sir-Lancelot, and 'Sir Not-appearing-in-this-game.'  They would be known as the 'Knights of the Round Table'.");
+            Console.ReadLine();
+            Console.WriteLine("Thine band of knights are quickly approching your court while 'Sir Benevere the Wise' explains how the Earth is banana shaped.  You are emazed by the new learning that keep gaining from you wise sir knight.  You are so exicted that you ask agaun abot how sheeps bladderc can be employed to prevent earthquakes. He replies to your request when suddenly it appears on the horizon, Camelot!  The knights proclaim its name in unison as if in awe and wonder. You welcome the knights to their new home. Let us ride to Camelot!");
+
+
+            Console.WriteLine("Suddenly you are reminded of Camelot.  ::The sound of silly songs and dance fill your head from the last time you were there::  Do you continue on with the Knights of the round Table to Camelot? 'Y'(Yes) 'N' (No)");
+            string key10 = Console.ReadKey().Key.ToString();
+            if (key10.ToUpper() == "N")
+            {
+                Console.WriteLine("Thou quickly changes ones mind, 'No on second thoughts, lets no got to Camelot. It is a silly place.");
+                Console.ReadLine();
+                Console.WriteLine("Your band of loyal knights quickly agree.");
+                Console.ReadLine();
+                Console.WriteLine("Your adventure continues.");
+                Console.ReadLine();
+                Console.WriteLine("");
+
+
+            }
+            else
+            {
+                Console.WriteLine("You and your Knights of the Round Table continue on to Camelot.  You hear the silly song and dance as you enter the castle.");
+                Console.ReadLine();
+                Console.WriteLine("The other knights and your self quickly become involve in the silly song and dance. So much that you forget all about your ambitions and create a troupe of performers know as the'Knights of Spamalot'.");
+                Console.ReadLine();
+                Console.WriteLine("You find great success in song and dance and become know as 'Arthur the Silly'.");
+                Console.ReadLine();
+                Console.WriteLine("Thine adventure has come to an end.");
+                Console.ReadLine();
+                return;
+            }
+
+
+            Console.WriteLine("");
+            Console.ReadLine();
+            Console.WriteLine("As you continue on ::thunder crashes:: the clouds part with a golden divine light.  You hear an ominous loud echoing voice calling thine name.  'Arthur. Arthur. King of the Britons.' Thou and thine knight bow in this divine moment as God speaks from the heavens.");
+            Console.ReadLine();
+            Console.WriteLine("'Oh don't grovel. If there's one thing I can't stand is people groveling.' God commands.");
+            Console.ReadLine();
+            Console.WriteLine("'Sorry.' thee quicly replies.");
+            Console.ReadLine();
+            Console.WriteLine("God quickly interupts, 'And don't apologize! Everytime I talk to someone its 'Sorry this,' and, 'forgive me that,' and, 'I'm not worthy. What are you doing now?");
+            Console.ReadLine();
+            Console.WriteLine("'Adverting my eyes, Oh Lord.' thou reply.");
+            Console.ReadLine();
+            Console.WriteLine("God interupts abruptly., 'Well dont. It's like those miserable psalms. They're so depressing. Now knock it off!");
+            Console.ReadLine();
+            Console.WriteLine("'Yes Lord! thou reply.");
+            Console.ReadLine();
+            Console.WriteLine("'Right. Arthur, king of the Britons. Your Knights of the Round Table shall have a task to make them an example in these dark times.' God proclaims. ");
+            Console.ReadLine();
+            Console.WriteLine("'Good idea, Oh Lord!' thou exclaims.");
+            Console.ReadLine();
+            Console.WriteLine("'Course its a good idea! Behold, Arthur, this is the Holy Grail. Look well, Arthur, for it is your sacred task to seek this Grail.  That is your purpose, Arthur. The quest for the Holy Grail.'  God ordains as the divine light fades and the cloud remerge.");
+            Console.ReadLine();
+            Console.WriteLine("The  knights  recognize the blessing and praise the Lord Gord for their new divine purpose.  Thou and thine knights continue on your quest along on your mighty steads.  You travel far across the land again on your destined path.  After traveling a great distance you approach yet another another large castle.  Patsy sounds the signaling yee arrival.");
+            Console.ReadLine();
+            Console.WriteLine("'Hello!', thou cries out.");
+            Console.ReadLine();
+            Console.WriteLine("A soldier with a distinct foreign accent replies, 'Hello, who is it?'");
+            Console.ReadLine();
+            Console.WriteLine("'It is King Arthur, and these are my 'Knights of the Round Table'. Who's castle is this?' you ask.");
+            Console.ReadLine();
+            Console.WriteLine("'This is the castle of my master, Guy de Loimbard.' the soldier replies.");
+            Console.ReadLine();
+            Console.WriteLine("'Go and tell your master that we have been charged by God with a sacred quest. If he will give us food and shelter for the night, he can join us in our quest for the Holy Grail.' thou explain to the  man.");
+            Console.ReadLine();
+            Console.WriteLine("The soldier quickly replies well I will go and ask him, but I don't think he will be very keen.  He's all ready got one you see.'");
+            Console.ReadLine();
+            Console.WriteLine("You and the knights reply 'What?!' 'He's already got one!' You shout back to the Frenchman, 'Are you sure he's already got one?'");
+            Console.ReadLine();
+            Console.WriteLine("'Oh yes. It's vearrry nice.' exclaims the soldier. The solder seem to be sincere.");
+            Console.ReadLine();
+            Console.WriteLine("Could this be possible? 'Well... can we come up and have a look?' thou asks.");
+            Console.ReadLine();
+            Console.WriteLine("'Of course not! You are English-types.', the soldier mocks.");
+            Console.ReadLine();
+            Console.WriteLine("'Well what are you then?' thou replies.");
+            Console.ReadLine();
+            Console.WriteLine("I'm French! Why do you think I have this outrageous accent, you silly king' the french soldier jests.");
+            Console.ReadLine();
+            Console.WriteLine("'What are you doing in England?' Sir Gallahad replies.");
+            Console.ReadLine();
+            Console.WriteLine("'Mind your own business!' the Frenchman shouts.");
+            Console.ReadLine();
+            Console.WriteLine("'If you will not sho us the Grail, we shall take your castle by force!, thou warns.");
+            Console.ReadLine();
+            Console.WriteLine("'You don't frighten us, English pig-dogs! Go and boil your bottoms, sons of a silly person. I blow my nose at you so-called Arthur King! You and all your silly English k...nigits!' The french soldier mocks while banging his helmet and making a rasberry noise with his lips.");
+            Console.ReadLine();
+            Console.WriteLine("'What a strange person.', Sir Gallahad states.");
+            Console.ReadLine();
+            Console.WriteLine("'Now look here my good man...', thou are quickly interrupted.");
+            Console.ReadLine();
+            Console.WriteLine("I don't want to talk to you anymore, you empty headed animal food-through wiper. I fart in you general direction.  Your mother was a hamster, and you father smely of elder berries.', mocks the french soldier.");
+            Console.ReadLine();
+            Console.WriteLine("'Is there someone else up there we can talk to?', Sir Gallahad asks.");
+            Console.ReadLine();
+            Console.WriteLine("'No. Now go away, or I shall taunt you a second time.' the french soldier warns.");
+            Console.ReadLine();
+            Console.WriteLine("'Now this is you last chance! I've been more than reasonable.' thou warns.");
+            Console.ReadLine();
+            Console.WriteLine("You see the French soldiers chatting amounst themselves.");
+            Console.ReadLine();
+            Console.WriteLine("'If you do not agree to my commands, then I shall'... mid sentence thou see a large cow flying toward thee mooing as its headed right for the group. 'Jesus Christ!' thou yells as the group scrambles. ");
+            Console.ReadLine();
+            Console.WriteLine("The cow makes contact with one of the squires clashing with him and his stead. 'Ow!' he cries in agony.");
+            Console.ReadLine();
+            Console.WriteLine("You make the judgement call and charge the castle yelling 'Charge!' as the knights join in your battlecry. As quickly as you charge in, a storm of livestock is hurled at your brigade.  Livestock, ducks, chickens, pheasants , and cats rain down on you like hellfire as you are assaulted with live domesticated animals. ");
+            Console.ReadLine();
+            Console.WriteLine("'Run away!' thou cries as hastily retreat and regroup.  In quick discourse, Sir Lancelot the Brave seems determined to charge back in while the Sir Berevad the Wise seems to have a plan.");
+            Console.ReadLine();
+            Console.WriteLine("Do you go with (Sir Lancelot the Brave) 'L' or (Sir Berevad the Wise) 'B'? ");
+
+            string key11 = Console.ReadKey().Key.ToString();
+            if (key11.ToUpper() == "B")
+            {
+                Console.WriteLine("Sir Berevad devises a plan like non other. Well almost... He draws up some schematics and quickly has the knights and squires constructing a large wooden contraption.  You don't know what to make of it but his wisdom has not failed thee thus far and you follow hi lead. ");
+                Console.ReadLine();
+                Console.WriteLine("Ye wheel the contraption up to the door of the castle as it makes a loud scqueaky noise the whole way.  A large wooden bunny awaits the french soldiers. Ye runs away back to cover as the french soldiers inspect creak the door open to inspect the contraption. They cart the giant wooden bunny inside the castle.");
+                Console.ReadLine();
+                Console.WriteLine("Once back in cover you ask Sir Berevad the next part of plan. He quickly replies, 'Well, now Lancelot, Gallahad, and I wait until nightfall, and then leap out of th rabbit, taking the French by surprise. Not only by surprise but totally unarmed!");
+                Console.ReadLine();
+                Console.WriteLine("'Who leaps out?', thou replies.");
+                Console.ReadLine();
+                Console.WriteLine("Sir Berevad explains, 'Lancelot, Gallahad, and I...  leap out of the rabbit... and... ::realizing that none of the knights are in the rabbit::  'Um ... Look. If we built this large, wooden badger...' Suddenly the large wooden rabbit is being hurled through the air from the castle at the brigade.");
+                Console.ReadLine();
+                Console.WriteLine("'Run away!' Thou screams. Everyone scrambles quickly but one of the squires is crushed by the giant wooden rabbit. The party scatters but you escape with thine life.");
+                Console.ReadLine();
+                Console.WriteLine("Your quest continues.");
+                Console.ReadLine();
+                Console.WriteLine("");
+
+
+
+            }
+            else
+            {
+                Console.WriteLine("You and your Knigths charge the castle brave and true. Unbeknownst to you the french soldiers were holding back the first time");
+                Console.ReadLine();
+                Console.WriteLine("Treb entire herd of livestock blacken out the sun as you and your knights are obliterated in  hail of bovine.");
+                Console.ReadLine();
+                Console.WriteLine("Thine life has come to its bovine end.");
+                Console.ReadLine();
+                Console.WriteLine("");
+                return;
+            }
+            Console.ReadLine();
+            Console.WriteLine("");
+            Console.ReadLine();
+            Console.WriteLine("");
+            Console.ReadLine();
+            Console.WriteLine("");
+            Console.ReadLine();
+            Console.WriteLine("");
+            Console.ReadLine();
+            Console.WriteLine("");
+            Console.ReadLine();
+            Console.WriteLine("");
+            Console.ReadLine();
+            Console.WriteLine("");
+            Console.ReadLine();
+            Console.WriteLine("");
+            Console.ReadLine();
+            Console.WriteLine("");
+            Console.ReadLine();
+            Console.WriteLine("");
+            Console.ReadLine();
+            Console.WriteLine("");
+            Console.ReadLine();
+            Console.WriteLine("");
+            Console.ReadLine();
+            Console.WriteLine("");
+            Console.ReadLine();
+            Console.WriteLine("");
+            Console.ReadLine();
+            Console.WriteLine("");
+            Console.ReadLine();
+            Console.WriteLine("");
+            Console.ReadLine();
+            Console.WriteLine("");
+            Console.ReadLine();
+            Console.WriteLine("");
+            Console.ReadLine();
+            Console.WriteLine("");
+            Console.ReadLine();
+            Console.WriteLine("");
+            Console.ReadLine();
+            Console.WriteLine("");
+            Console.ReadLine();
+            Console.WriteLine("");
+            Console.ReadLine();
+            Console.WriteLine("");
+            Console.ReadLine();
+            Console.WriteLine("");
+            Console.ReadLine();
+            Console.WriteLine("");
+            Console.ReadLine();
+            Console.WriteLine("");
+            Console.ReadLine();
+            Console.WriteLine("");
+            Console.ReadLine();
+            Console.WriteLine("");
+            Console.ReadLine();
+            Console.WriteLine("");
+            Console.ReadLine();
+            Console.WriteLine("");
+            Console.ReadLine();
+            Console.WriteLine("");
+            Console.ReadLine();
+            Console.WriteLine("");
+            Console.ReadLine();
+            Console.WriteLine("");
+            Console.ReadLine();
+            Console.WriteLine("");
+            Console.ReadLine();
+            Console.WriteLine("");
+            Console.ReadLine();
+            Console.WriteLine("");
+            Console.ReadLine();
+            Console.WriteLine("");
+            Console.ReadLine();
+            Console.WriteLine("");
+            Console.ReadLine();
+            Console.WriteLine("");
+            Console.ReadLine();
+            Console.WriteLine("");
+            Console.ReadLine();
+            Console.WriteLine("");
+            Console.ReadLine();
+            Console.WriteLine("");
+            Console.ReadLine();
+            Console.WriteLine("");
+            Console.ReadLine();
+            Console.WriteLine("");
+            Console.ReadLine();
+            Console.WriteLine("");
+            Console.ReadLine();
+            Console.WriteLine("");
+            Console.ReadLine();
+            Console.WriteLine("");
+            Console.ReadLine();
+            Console.WriteLine("");
+            Console.ReadLine();
+            Console.WriteLine("");
+            Console.ReadLine();
+            Console.WriteLine("");
+            Console.ReadLine();
+            Console.WriteLine("");
+
+
+            }
+
+        
+    }
+}
