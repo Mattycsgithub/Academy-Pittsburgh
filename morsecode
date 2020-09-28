@@ -1,0 +1,193 @@
+using System;
+namespace Application
+{
+    public class AcademyWeek2Day1
+    {
+        public AcademyWeek2Day1()
+        {
+            // Morse Code Project
+
+            // Morse Code
+            // Input a string from the user
+            // Output the string as Morse Code
+            // Use a single space to separate letters
+            // Use a double space to separate words
+            // Use a triple space to separate sentences
+            Console.WriteLine("Hello! I am the am the morse code translator.  What message would you like me to encode.");
+            String input = Console.ReadLine().ToLower();
+
+
+            for (int i = 0,; i < input.Length; i++)
+            {
+
+
+                if (input[i] == 'a')
+                {
+                    Console.Write(".- ");
+                }
+                if (input[i] == 'b')
+                {
+                    Console.Write("-... ");
+                }
+                if (input[i] == 'c')
+                {
+                    Console.Write("-.-. ");
+                }
+                if (input[i] == 'd')
+                {
+                    Console.Write("-..");
+                }
+                if (input[i] == 'e')
+                {
+                    Console.Write(". ");
+                }
+                if (input[i] == 'f')
+                {
+                    Console.Write("..-. ");
+                }
+                if (input[i] == 'g')
+                {
+                    Console.Write("--. ");
+                }
+                if (input[i] == 'h')
+                {
+                    Console.Write(".... ");
+                }
+                if (input[i] == 'i')
+                {
+                    Console.Write(".. ");
+                }
+                if (input[i] == 'j')
+                {
+                    Console.Write(".--- ");
+                }
+                if (input[i] == 'k')
+                {
+                    Console.Write("-.- ");
+                }
+                if (input[i] == 'l')
+                {
+                    Console.Write(".-.. ");
+                }
+                if (input[i] == 'm')
+                {
+                    Console.Write("-- ");
+                }
+                if (input[i] == 'n')
+                {
+                    Console.Write("-.");
+                }
+                if (input[i] == 'o')
+                {
+                    Console.Write("--- ");
+                }
+                if (input[i] == 'p')
+                {
+                    Console.Write(".--. ");
+                }
+                if (input[i] == 'q')
+                {
+                    Console.Write("--.- ");
+                }
+                if (input[i] == 'r')
+                {
+                    Console.Write(".-. ");
+                }
+                if (input[i] == 's')
+                {
+                    Console.Write("... ");
+                }
+                if (input[i] == 't')
+                {
+                    Console.Write("- ");
+                }
+                if (input[i] == 'u')
+                {
+                    Console.Write("..- ");
+                }
+                if (input[i] == 'v')
+                {
+                    Console.Write("...- ");
+                }
+                if (input[i] == 'x')
+                {
+                    Console.Write("-..- ");
+                }
+                if (input[i] == 'y')
+                {
+                    Console.Write("-.-- ");
+                }
+                if (input[i] == 'z')
+                {
+                    Console.Write("--.. ");
+                }
+                if (input[i] == '1')
+                {
+                    Console.Write(".---- ");
+                }
+                if (input[i] == '2')
+                {
+                    Console.Write("..--- ");
+                }
+                if (input[i] == '3')
+                {
+                    Console.Write("...-- ");
+                }
+                if (input[i] == '4')
+                {
+                    Console.Write("....- ");
+                }
+                if (input[i] == '5')
+                {
+                    Console.Write("..... ");
+                }
+                if (input[i] == '6')
+                {
+                    Console.Write("-.... ");
+                }
+                if (input[i] == '7')
+                {
+                    Console.Write("--... ");
+                }
+                if (input[i] == '8')
+                {
+                    Console.Write("---.. ");
+                }
+                if (input[i] == '9')
+                {
+                    Console.Write("-----. ");
+                }
+                if (input[i] == '0')
+                {
+                    Console.Write("----- ");
+                }
+                if (input[i] == '0')
+                {
+                    Console.Write("----- ");
+                }
+                if (input[i] == ' ')
+                {
+                    Console.Write(" ");
+                }
+                if (input[i] == '.' || '?' || '!')
+                {
+                    Console.Write("  ");
+                }
+
+
+
+
+
+
+
+
+
+
+
+
+            }
+
+
+        }
+    }
+}
