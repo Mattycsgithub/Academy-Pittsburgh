@@ -1,0 +1,19 @@
+puts "What is the length of your gardenbox?"
+length = gets.to_i
+
+puts "What is the width of your gardenbox?"
+width = gets.to_i
+
+area = length * width 
+puts "You area is #{area}."
+
+perimeter = (2 * length) + (2 * width)
+puts "Your perimeter is #{perimeter}."
+
+carrots = area
+corn = (area * 3)/16
+beets = (area * 9)/16
+
+puts "You can plant #{carrots} carrots."
+puts "You can plant #{corn} corn."
+puts "You can plant #{beets} beets."
