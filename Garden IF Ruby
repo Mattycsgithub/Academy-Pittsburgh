@@ -1,0 +1,28 @@
+puts "What is the length of your gardenbox?"
+length = gets.to_i
+
+puts "What is the width of your gardenbox?"
+width = gets.to_i
+
+area = length * width 
+puts "You area is #{area}."
+
+perimeter = (2 * length) + (2 * width)
+puts "Your perimeter is #{perimeter}."
+
+carrots = area
+corn = (area * 3)/16
+beets = (area * 9)/16
+
+puts "What would you like to plant?"
+vegetable = gets.chomp.downcase
+
+if vegetable == "carrots"
+puts "You can plant #{carrots} carrots."
+end
+if vegetable == "corn"
+puts "You can plant #{corn} corn."
+end
+if vegetable == "beets"
+puts "You can plant #{beets} beets."
+end
