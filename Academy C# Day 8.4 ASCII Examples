@@ -1,0 +1,25 @@
+using System;
+
+namespace Week2Wednesday
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            char letter = 'j';
+            Console.WriteLine(letter);
+            Console.WriteLine((int)letter);
+            Console.WriteLine(93);
+            Console.WriteLine((char)93);
+
+            char columnChoice = 'A';
+            Console.WriteLine(columnChoice);
+            Console.WriteLine((int)columnChoice);
+            Console.WriteLine(columnChoice - 65);
+
+            Console.WriteLine((char)('Z' - 5));
+            Console.WriteLine((char)120);
+
+        }
+    }
+}
