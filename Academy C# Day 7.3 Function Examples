@@ -1,0 +1,64 @@
+using System;
+using System.Reflection;
+
+namespace Week2
+{
+    class Program
+    {
+        static int Add(int x, int y)
+        {
+            return (x + y);
+        }
+
+        static void HitEnterToContinue()
+        {
+            Console.WriteLine("Please hit enter to continue...");
+            Console.ReadLine();
+        }
+
+        static string AskUserForName(string WhatToAskFor)
+        {
+            Console.WriteLine(WhatToAskFor);
+            string answer = Console.ReadLine();
+            return answer;
+        }
+
+        static string AskUserForFavoriteFood()
+        {
+            Console.WriteLine("What is your favorite food?");
+            string answer = Console.ReadLine();
+            return answer;
+        }
+
+        static int AskUserForNumber()
+        {
+            Console.WriteLine("Give me a number!");
+            int answer;
+            while (true)
+            {
+                if (int.TryParse(Console.ReadLine(), out answer))
+                {
+                    return answer;
+                }
+                else
+                {
+                    Console.WriteLine("That wasn't a number, try again!");
+                }
+            }
+        }
+
+        static void Main(string[] args)
+        {
+            string name = AskUserForName("What is your name?");
+            Console.WriteLine("Nice to meet you, " + name);
+
+            string food = AskUserForName("What is your favorite food?");
+            Console.WriteLine("Oh, I also like " + food);
+
+            int age = AskUserForNumber();
+            Console.WriteLine("In 5 years you will be " + (age + 5));
+        }
+
+
+    }
+}
