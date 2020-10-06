@@ -1,0 +1,4 @@
+int numberOfTens = change / 1000; // 1000 is 10 * 100, because we are doing everything in pennies
+            change = change % 1000; // change = change - (numberOfTens * 1000);
+            Console.WriteLine(numberOfTens + " ten(s)");
+            Console.WriteLine("Current Change: " + change);
