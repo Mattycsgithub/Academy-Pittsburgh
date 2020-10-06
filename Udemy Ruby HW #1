@@ -1,0 +1,8 @@
+uts "What is you first name?"
+firstName = gets.chomp
+puts "Whats is your last name?"
+lastName = gets.chomp
+"Your full name is #{firstName} #{lastName}."
+fullname = firstName + lastName
+puts "Your full name reversed is #{fullname.reverse}."
+puts "Your name has #{fullname.length} characters in it."
