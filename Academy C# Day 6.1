@@ -1,0 +1,40 @@
+using System;
+using System.Reflection;
+
+namespace Week2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // Take in a user's message
+            // console writeline then readline
+            // turn that message into morse code
+            // turn all of the "a"s into ".-"
+            // turn all of the "b"s into "-..."
+
+            // write down each letter, but if the letter is a, actually write done .-
+            // if the letter is b, actually write down "-..."
+
+            // look at each letter, then find that letter on wikipedia's picture
+            // and put in the translated/morse version
+
+            // output the morse code message
+            // console writeline
+
+            // Take in user's message
+            Console.WriteLine("What is your message?");
+            string message = Console.ReadLine();
+
+            //// turn all of the "a"s into ".-"
+            //// turn all of the "b"s into "-..."
+
+            Console.WriteLine(message);
+            message = message.Replace("a", ".- ");
+            message = message.Replace("b", "-... ");
+            message = message.Replace("c", "-.-. ");
+            Console.WriteLine("Message after replace: " + message);
+
+        }
+    }
+}
