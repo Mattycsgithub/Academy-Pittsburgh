@@ -1,0 +1,51 @@
+using System;
+
+namespace Variables
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string name;
+            name = "John";
+
+            Console.WriteLine(name); // John
+
+            int x;
+            x = 10;
+
+            Console.WriteLine(x); // 10
+
+            Console.WriteLine(name + x); // Console.WriteLine("John" + 10); // John10 // Can turn a int into a string automatically
+
+            name = "Jean";
+
+            Console.WriteLine(name); // Jean
+
+            int y = 100; // Short cut, both lines are still being done
+
+            Console.WriteLine(y);
+            x = y;
+            Console.WriteLine(x);
+            y = 234;
+            Console.WriteLine(x);
+
+            // x = name; // Can't turn a string into a number automatically
+            // name = x; // Can't turn an int into a string automatically
+
+            name = x.ToString();
+            Console.WriteLine(name);
+
+            string someNumber;
+            someNumber = "341";
+
+            x = Convert.ToInt32(someNumber);
+            Console.WriteLine(x + 10);
+
+            string someString;
+            Console.WriteLine("Hey, type in a sentence for me, thanks.");
+            someString = Console.ReadLine(); // Waits for the user to type something in, then puts that into someString
+            Console.WriteLine("You wrote: " + someString);
+        }
+    }
+}
