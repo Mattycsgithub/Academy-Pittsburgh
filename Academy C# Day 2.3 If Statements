@@ -1,0 +1,84 @@
+using System;
+
+namespace Variables
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            if(true)
+            {
+                Console.WriteLine("This line of code has run!");
+                Console.WriteLine("I can do more stuff in here!");
+                //string answer = Console.ReadLine();
+            }
+            if(false)
+            {
+                Console.WriteLine("This line of code has run?");
+            }
+
+            if(5 < 10)
+            {
+                Console.WriteLine("5 is less than 10!");
+            }
+            if(10 < 5)
+            {
+                Console.WriteLine("10 is less than 5");
+            }
+            if(5 == 5)
+            {
+                Console.WriteLine("5 is equal to 5");
+            }
+
+            if("a" == "a")
+            {
+                Console.WriteLine("a is equal to a");
+            }
+            if("john" == "jean")
+            {
+                Console.WriteLine("They are the same person");
+            }
+
+            Console.WriteLine("Type in your name: ");
+            string name = Console.ReadLine();
+            if(name == "Dave")
+            {
+                Console.WriteLine("Hi dave!");
+            }
+
+            if(5 + 3 < 10)
+            {
+                Console.WriteLine("Does this work?");
+            }
+
+            if(name == "Dave" || name == "John")
+            {
+                Console.WriteLine("Hello Dave or John, whichever one you are.");
+            }
+
+            int x = 10;
+            name = "Dave";
+            if(name == "John" && x > 10 || name == "Dave")
+            {
+                // name == "John" && x > 10 || name == "Dave"
+                // false && x > 10 || name == "Dave"
+                // false && false || name == "Dave"
+                // false || name == "Dave"
+                // false || true
+                // true
+                Console.WriteLine("This is true");
+            }
+            if (name == "John" && (x > 10 || name == "Dave"))
+            {
+                // name == "John" && (x > 10 || name == "Dave")
+                // name == "John" && (false || name == "Dave")
+                // name == "John" && (false || true)
+                // name == "John" && true
+                // false && true
+                // false
+                Console.WriteLine("This is not true");
+            }
+
+        }
+    }
+}
