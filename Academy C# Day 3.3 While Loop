@@ -1,0 +1,35 @@
+using System;
+
+namespace Variables
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int x = 1;
+            while (x < 10)
+            {
+                Console.WriteLine("Hello there!");
+                if (x == 7)
+                {
+                    Console.WriteLine("Heyyy, lucky number 7.");
+                }
+                // make 5 actually equal 20
+                Console.WriteLine(x);
+                x = x + 1;
+            }
+
+            Console.WriteLine("What was the day of your birth? I mean the number, not the actual day. You know, like 3. Or 4? I dunno, that number day thing.");
+            int day = Convert.ToInt32(Console.ReadLine());
+
+            while(day <= 0 || day > 31)
+            {
+                Console.WriteLine("Hey, no. Bad. Don't  do that. Try again.");
+                day = Convert.ToInt32(Console.ReadLine());
+            }
+
+            Console.WriteLine("Hey, this is the final value of x: " + x);
+
+        }
+    }
+}
