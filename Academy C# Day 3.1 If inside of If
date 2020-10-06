@@ -1,0 +1,27 @@
+using System;
+
+namespace Variables
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("What is your name?");
+            string name = Console.ReadLine();
+            string shortName = name;
+            if (name.Length > 5)
+            {
+                Console.WriteLine("Do you have a nickname or a shorter form of your name?");
+                // string shortName = Console.ReadLine();
+                string answer = Console.ReadLine();
+                if(answer != "no")
+                {
+                    shortName = answer;
+                }
+            }
+
+            Console.WriteLine("Nice to meet you, " + shortName);
+
+        }
+    }
+}
