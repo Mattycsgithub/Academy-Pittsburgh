@@ -1,0 +1,25 @@
+using System;
+using System.Security.Cryptography.X509Certificates;
+
+namespace Variables
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // counting loop using while
+            int counter = 0;
+            while(counter < 10)
+            {
+                counter = counter + 1;
+                Console.WriteLine("Hi there from while");
+            }
+
+            // counting loop using for
+            for(int forcounter = 0; forcounter < 10; forcounter = forcounter + 1)
+            {
+                Console.WriteLine("Hi there from for");
+            }
+        }
+    }
+}
