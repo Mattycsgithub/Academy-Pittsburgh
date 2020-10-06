@@ -1,0 +1,42 @@
+using System;
+
+namespace Session11Day1
+{
+    class program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine(2+2); // 4
+            Console.WriteLine("2+2"); // 2+2
+            Console.WriteLine(3+4+5); // 9
+            Console.WriteLine(5 * 10); // 50
+            Console.WriteLine(5 * 2 + 10); // 20
+            Console.WriteLine(5 * (2 + 10)); // 60
+            Console.WriteLine(18 * 3.14); // 56.5?
+            Console.WriteLine(18 * Math.PI); // 56.5snfmore
+
+            Console.WriteLine(5 / 2); // 2
+            Console.WriteLine(5.0 / 2.0);  // 2.5
+
+
+            Console.WriteLine(5 / 2 * 10); // 20
+            Console.WriteLine(5.0 / 2 * 10); // 25
+            Console.WriteLine(5 / 2 * 10.0); // 20
+            Console.WriteLine(5.0 / 2.0 * 10.0); // 25
+
+
+
+            Console.WriteLine("Hello World"); // Hello World
+            Console.WriteLine("Hello" + "World"); // HelloWorld
+            Console.WriteLine("Hello" + 2); // Hello2
+            Console.WriteLine("Hello" + 2 + "World"); // Hello2World
+            Console.WriteLine("Hello" + 2 + 2 + "World"); // Hello22World
+            Console.WriteLine("Hello" + (2 + 2) + "World"); // Hello4World
+            // Console.WriteLine("Hello" + World); // numbers are values, some text needs to be defined to have a value
+
+            Console.WriteLine("Hello World".Length);
+            Console.WriteLine("Hello World".ToUpper());
+            Console.WriteLine("Hello World".Replace("World", "Universe"));
+        }
+    }
+}
