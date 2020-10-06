@@ -1,0 +1,46 @@
+ using System;
+
+namespace Variables
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("What is the length of your gardenbox?");
+            string answer = Console.ReadLine();
+            int length = Convert.ToInt32(answer);
+
+            Console.WriteLine("What is the width of your gardenbox?");
+            answer = Console.ReadLine();
+            int width = Convert.ToInt32(answer);
+
+            //Console.WriteLine("What is the height of your gardenbox?");
+            //answer = Console.ReadLine();
+            //int height = Convert.ToInt32(answer);
+
+            Console.WriteLine("The area of your garden is " + (length * width));
+            Console.WriteLine("The perimeter of your garden is " + ((2 * length) + (2 * width)));
+
+            // version 1
+            Console.WriteLine("You can plant " + ((length * width * 16) / 16) + " carrots");
+            Console.WriteLine("you can plant " + ((length * width * 9) / 16) + " beets");
+
+            // version 2
+            double carrotsPerSquareFoot = 16 / 16;
+            Console.WriteLine("You can plant " + (length * width * carrotsPerSquareFoot) + " carrots");
+            double beetsPerSquareFoot = 9.0 / 16; // 0.575ish
+            Console.WriteLine("You can plant " +  Math.Floor(length * width * beetsPerSquareFoot) + " beets");
+
+            // version 3
+            int bigBlocksInMyGarden = length * width / 16;
+            Console.WriteLine("You can plant " + (bigBlocksInMyGarden * 16) + " carrots");
+            Console.WriteLine("You can plant " + (bigBlocksInMyGarden * 9) + " beets");
+
+
+            // (length * width * numberOfVeggies) / 16
+        }
+    }
+}
+
+Scott said.....
+FYI -
