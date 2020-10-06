@@ -1,0 +1,13 @@
+string[] balloons = new string[10];
+            for (int j = 0; j < 10; j++)
+            {
+                Console.WriteLine("Tell me the color of your balloon " + (j + 1) + "!");
+                balloons[j] = Console.ReadLine();
+                
+            }
+
+            Console.WriteLine("Here are all of the colors!");
+            for (int j = 0; j < 10; j++)
+            {
+                Console.WriteLine(balloons[j]);
+            }
