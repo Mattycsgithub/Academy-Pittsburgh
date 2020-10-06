@@ -1,0 +1,81 @@
+using System;
+
+namespace Variables
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("What is your name?");
+            string name = Console.ReadLine();
+
+            if (name.Length < 4)
+            {
+                Console.WriteLine("You have a short name.");
+            }
+            else if (name.Length < 10)
+            {
+                Console.WriteLine("Your name is less than 10 but more than 3");
+            }
+            else
+            {
+                Console.WriteLine("I have no commentary on your name.");
+            }
+
+
+            switch(name.Length)
+            {
+                case 3:
+                    Console.WriteLine("Your name is 3 letters long.");
+                    break;
+                case 4:
+                    Console.WriteLine("Your name is more than 3, cause it's 4");
+                    break;
+                case 5:
+                    Console.WriteLine("This is 5");
+                    break;
+                case 6:
+                case 7:
+                case 8:
+                    Console.WriteLine("Your name is like 6-8 letters long.");
+                    break;
+                default:
+                    Console.WriteLine("You have a name length that I am not prepared for.");
+                    break;
+            }
+
+            Console.WriteLine("Would you like to tell me your (n)ame or (a)ge or (q)uit.");
+            string answer = Console.ReadLine();
+            switch (answer)
+            {
+                case "n":
+                    Console.WriteLine("I'm going to ask your name.");
+                    break;
+                case "a":
+                    Console.WriteLine("What is your age?");
+                    break;
+                case "q":
+                    Console.WriteLine("Ok, I'm gonna quit now.");
+                    break;
+                default:
+                    Console.WriteLine("That wasn't a menu item!");
+                    break;
+            }
+
+            //if (name.Length < 4)
+            //{
+            //    Console.WriteLine("You have a short name.");
+            //}
+            //if(name.Length >= 5 && name.Length < 10)
+            //{
+            //    Console.WriteLine("You have a medium name.");
+            //}
+            //if(name.Length > 10)
+            //{
+            //    Console.WriteLine("That right there is a letterific name.");
+            //}
+
+        }
+    }
+}
+
