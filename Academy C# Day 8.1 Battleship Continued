@@ -1,0 +1,98 @@
+using System;
+using System.Reflection;
+
+namespace Week2
+{
+    class Program
+    {
+        // Things we can add
+        // Random ship placement
+        // End after all of the ships are blown up
+        // * User doesn't have to pretend they can't see the ships
+        // * Update grid to react to what user has done (show misses and hits)
+        // * Add ships that are more than one square
+        // One player vs Two Player modes
+        // Ship types so it can say "You sunk my destroyer" vs "You sunk my battleship"
+        // Add some good sounds to the game
+        // Make the grid more square instead of rectangular
+        // Make the graphics better in general?
+        // Have user type things like B2 instead of asking the question twice for 0-9
+        // Bigger ship has a weak point
+
+
+
+
+        static void Main(string[] args)
+        {
+            // type[] somename = new type[size];
+            //bool[,] grid = new bool[10,10]; // true is a ship, false is not a ship
+            //string[,] grid = new string[10,10]; // X is a ship, O is not a ship
+            //char[,] grid = new char[10,10]; // X is a ship, O is not a ship
+            int[,] grid = new int[10,10]; // 1 is a ship, 0 is water, 2 is a hit, 3 is a miss
+
+            //// working on printing that first row
+            //Console.WriteLine(grid[0, 0]); // prints the first box in the array
+            //Console.WriteLine(grid[0, 1]); // prints the second box [1, 0] also works
+            //Console.WriteLine(grid[0, 2]);
+
+            //// working on printing that second row
+            //Console.WriteLine(grid[1, 0]); // prints the first box of the second row of the array
+            //Console.WriteLine(grid[1, 1]); // prints the second box of the second row
+            //Console.WriteLine(grid[1, 2]);
+
+            // Put some "ships" on the grid
+
+            grid[0, 3] = 1;
+            grid[1, 3] = 1;
+            grid[2, 3] = 1;
+
+            grid[5, 8] = 1;
+            grid[5, 9] = 1;
+
+            grid[4, 4] = 1;
+            grid[5, 4] = 1;
+            grid[6, 4] = 1;
+            grid[7, 4] = 1;
+
+            while (true)
+            {
+                // Print out the grid
+                for (int row = 0; row < 10; row++)
+                {
+                    for (int column = 0; column < 10; column++)
+                    {
+                        // looking at each individual cell of the grid
+                        // and printing it out
+                        // Console.Write(grid[row, column]);
+                        Console.Write("~");
+                        // this is where we need to update the display part
+                    }
+                    Console.WriteLine();
+                }
+
+                // Ask the user where they want to shoot
+                // right now, I'll ask for a row and then a column
+                // and right now, I'll just ask for 0-9 for each of those
+
+                Console.WriteLine("What row would you like to shoot at? 0-9");
+                int shootyRow = Convert.ToInt32(Console.ReadLine());
+
+                Console.WriteLine("What column would you like to shoot at? Also 0-9");
+                int shootyColumn = Convert.ToInt32(Console.ReadLine());
+
+                // See if the user hit a ship or missed
+                if (grid[shootyRow, shootyColumn] == 1)
+                {
+                    // 1 is a boat, so it's a hit!
+                    Console.WriteLine("You hit that boat!");
+                    grid[shootyRow, shootyColumn] = 2;
+                }
+                else
+                {
+                    Console.WriteLine("You hit that water!");
+                    grid[shootyRow, shootyColumn] = 3;
+                }
+            }
+        }
+    }
+}
