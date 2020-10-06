@@ -1,0 +1,29 @@
+using System;
+using System.Security.Cryptography.X509Certificates;
+
+namespace Variables
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // counting loop using for
+            for (int counter = 1; counter <= 100; counter = counter + 1)
+            {
+                Console.WriteLine("Hi there from for " + counter);
+            }
+
+            // counting by 5 loop using for
+            for (int counter = 0; counter <= 100; counter = counter + 5)
+            {
+                Console.WriteLine("Hi there from for " + counter);
+            }
+
+            // counting loop going backwards
+            for (int counter = 100; counter >= 0; counter = counter - 1)
+            {
+                Console.WriteLine("Hi there from for " + counter);
+            }
+        }
+    }
+}
