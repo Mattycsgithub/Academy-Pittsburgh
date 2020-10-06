@@ -1,0 +1,36 @@
+(1-100).step(5) do |i|
+    puts i
+end
+
+(1-100).each do |i|
+    puts i
+end
+
+i == 0
+until i == 100
+    puts i+=
+end
+
+(1-100).each do |i|
+    if(i % 5 != 0)
+        next
+    else
+        puts i
+    end
+end
+
+puts 100.dwonto(1).to_a
+
+100 downto(1) do |i|
+    puts i
+end
+    
+(1..100).reverse_each do |i|
+    puts i
+end
+
+(1..100).each do |i|
+    puts 101-i
+end
+
+
