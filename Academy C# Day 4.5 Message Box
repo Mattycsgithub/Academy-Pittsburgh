@@ -1,66 +1,32 @@
-namespace MessageBox
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            // make empty array of size <whatever>
-            // while true:
-            // ask for command
-            // if command == "save":
-            //// get message
-            //// add into array
-            //// print ID
-            // else if retrieve:
-            //// get ID
-            //// print message
-            // else if exit:
-            //// break
-            // else:
-            //// go back to input
+// [Show] the user a _menu_
+            // [Ask] the user for their _choice_
+            //  If they said s, [save] their _message_
+            //  if they said r, [ask] for a _message id_ then [show] that _message_
+            //  if they said q, [exit] the program
+            // [Show] the menu again ([go back] to the top)
 
-            int mailboxSize = 10;
-            string[] mailbox = new string[mailboxSize];
-            string command = ""; // place to put what the user wants to do
-            // int nextID = 0; // where to put the next saved message
-
-            while (true) // do until I tell you to stop
+            string choice = "go go go";
+            while(choice != "q")
             {
-                Console.WriteLine("Please type \"save\", \"retrieve\", or \"exit\".");
-                command = Console.ReadLine(); // grabs user input and stores it as command
-                if (command == "save")
+                Console.WriteLine("Do you want to s)ave a message, r)etreive a message, or q)uit.");
+                choice = Console.ReadLine();
+
+                if (choice == "s")
                 {
-                    // prompt user for message
-                    // ask user for desired message slot
-                    // put message in slot
-
-                    Console.WriteLine("Please enter your message:");
-                    string message = Console.ReadLine();
-                   
-                    
-
+                    // I should save a message here
+                    Console.WriteLine("I should be saving!");
                 }
-                else if (command == "retrieve")
+                else if (choice == "r")
                 {
-                    Console.WriteLine("Please choose an ID to retrieve (0-9).");
-                    int ID = Convert.ToInt32(Console.ReadLine());
-
-                    Console.WriteLine("Your message is: " + mailbox[ID]);
+                    Console.WriteLine("Ask for a message id then show that message");
                 }
-                else if (command == "exit")
+                else if (choice == "q")
                 {
-                    break;
+                    Console.WriteLine("I should quit here.");
+                    // return; // this works
                 }
                 else
                 {
-                    Console.WriteLine("That wasn't one of the things I asked you for.  Try again?");
+                    Console.WriteLine("I don't remember putting that on the menu.");
                 }
-                //for (int i = 0; i < mailboxSize; i++)
-                //{
-                //    Console.WriteLine(i);
-                //    Console.WriteLine(mailbox[i]);
-                //}
             }
-        }
-    }
-}
