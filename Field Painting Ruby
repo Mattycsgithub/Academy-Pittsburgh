@@ -1,0 +1,30 @@
+include Math
+puts "Please input the radius of your circle."
+radius = gets.chomp.to_f
+puts "Choose your paint color (red, blue, green, or yellow):"
+color = gets.chomp
+area = (PI * radius * radius).ceil
+puts area
+if (color == "red") 
+    bucketCoverage = 100
+    bucketPrice = 25
+end
+if (color == "blue")
+    bucketCoverage = 120
+    bucketPrice = 28
+end
+if (color == "green")
+    bucketCoverage = 90
+    bucketPrice = 33
+end
+if (color == "yellow")
+    bucketCoverage = 70
+    bucketPrice = 22
+end
+puts bucketCoverage 
+buckets = (area / bucketCoverage).ceil
+puts buckets
+totalPrice = buckets * bucketPrice
+puts bucketPrice
+puts "You will need #{buckets} buckets of paint."
+puts "It will cost $ #{totalPrice}."
