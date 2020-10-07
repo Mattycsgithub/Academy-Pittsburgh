@@ -1,0 +1,22 @@
+# count = 1
+# while count <= 10
+#     puts count
+#     count += 1
+# end
+
+=begin
+This is block comment
+It can be many lines
+=end
+
+
+for number in 1..10 # syntax that is more like C#
+    puts number
+end
+
+(1..10).each do |other_number| # syntax that is more like ruby
+    puts other_number
+end
+
+
+Bond
