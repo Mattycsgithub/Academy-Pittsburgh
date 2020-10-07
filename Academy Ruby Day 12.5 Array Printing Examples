@@ -11,4 +11,4 @@ end
 names.each do |name|
     puts name
 end
-Maddi Love invited etslagle.
+
