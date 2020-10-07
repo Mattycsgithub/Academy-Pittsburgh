@@ -1,0 +1,20 @@
+puts 100.downto(1).to_a
+
+100.downto(1) {|i| puts i}
+
+100.downto(1) do |i|
+    puts i
+end
+
+(1..100).reverse_each do |i|
+    puts i
+end
+
+i = 100
+until i == 0
+    puts i -= 1
+end
+
+(1..100).each do |i|
+    puts 101 - i
+end```
