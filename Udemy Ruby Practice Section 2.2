@@ -1,0 +1,31 @@
+1  +  2 = 3 #valid int
+10  *  2 = 20 #valid int
+10 / 2  = 5 #valid int
+10 / 4 = 2 #not valid need to convert to float still int
+10.0 / 4 = 2.5 #valid float
+10 / 4.0 = 2.5  #valid float
+10.to_f / 4 = 2.5 #valid float
+10 / 4.to_f = 2.5 #valid  float
+(10 / 4).to_f = 2 #invalid value converts to int first
+x = 5 #can use variable as int
+y = 10
+y / x = 2
+"5" * "5" # not valid need conversion
+"5" * 2 = "55" #valid as a string concatination
+2 * "5" # invalid can't multiply by string
+"-" * 20 #gives you a line of 20 dashes
+20.times {print "-"} #makes code repeat 20 times
+20.times {puts rand(10)} # generates 10 random numbers between 0 & 10 so 1-9
+x = "5".to_i #convert string to integer x = 5 as integer
+y = "10".to_f = 10.0 #valid
+"hello".to_i = 0 #Converting strings to numbers = 0
+"hello".to_f = 0.0
+x = "hello" = 0
+puts "simple calculator"
+25.times {print "-"}
+puts "Enter first number'"
+num_1 = gets.chomp
+puts "Enter second number"
+num_2 = gets.chomp
+puts "The first number mutiplied by the second number is #{num_1.to_i * num_2.to_1}."  
+#its alwasy good to keep raw data from the user so it is better to store the data and convert it after the fact.
