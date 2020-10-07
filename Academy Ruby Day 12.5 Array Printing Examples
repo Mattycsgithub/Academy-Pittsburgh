@@ -1,0 +1,14 @@
+names = ["John", "Jean", "Saturn", "Mars"]
+
+# puts names[1] # prints Jean
+
+puts names
+
+for name in names
+    puts name
+end
+
+names.each do |name|
+    puts name
+end
+Maddi Love invited etslagle.
