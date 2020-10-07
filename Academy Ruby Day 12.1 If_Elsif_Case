@@ -1,0 +1,26 @@
+puts "What is your name?"
+name = gets.chomp
+
+if name.length > 10
+    puts "You've got a long name"
+end
+
+if name.include?("a") || (name.include? "A")
+    puts "I see an a in your name"
+elsif name.include?("b")
+    puts "You've got a b in your name"
+end
+
+puts "Give me a number from 1-10"
+number = gets.to_i
+
+case number
+    when 1
+        puts "You picked one"
+    when 2, 3, 4, 5
+        puts "You picked one of those numbers between 2 and 5"
+    when 6
+        puts "That was a six"
+    else
+        puts "You picked seven or higher"
+end
