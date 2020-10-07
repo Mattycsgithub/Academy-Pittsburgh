@@ -1,0 +1,27 @@
+message_ID= 0
+messages = []
+choice = ""
+
+while choice != "quit"
+    puts "Hello your Infinte Mailbox 9000 that is never full. It can be over 9000! Would you like to store a message (save), retrieve a message (retrieve), or quit (quit)? Please enter your choice as shown in parentheses."
+    choice = gets.chomp
+    if (choice == "save")
+        puts "Please enter your message."
+        message = gets.chomp
+        messages[message_ID] = message
+        puts "Your message ID is #{message_ID}."
+        message_ID +=1 
+    elsif (choice == "retrieve")
+        puts "Please enter your message ID number"
+        puts messages[ gets.chomp.to_i ]
+    elsif (choice == "quit")
+        return
+    end
+    puts "Please entera valid choice.qui"
+end
+
+
+
+  
+
+
