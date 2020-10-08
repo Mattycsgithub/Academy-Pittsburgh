@@ -1,0 +1,12 @@
+a = [1,2,3,4,5,6,7,8,9]  #any object can exist in an array
+puts a #prints array
+print a #prints array
+p a #prints array
+a.last #equal last item in array
+x = 1..100 #equals a range
+x.to_a.shuffle #converts range to array then shuffles it
+#x is still a range
+x.to_a.shuffle! #converts x to a shuffled array
+z = x.to_a.shuffle! #makes variable equal to 
+x = a..z #create a range of letters
+x.to_a #converts 
