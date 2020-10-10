@@ -1,0 +1,113 @@
+require 'io/console' # this is needed for STDIN.getch to work
+require 'active_support'
+#10 x 10 grid/ array
+#Adventure game for sure
+#Walls
+#Movement
+#Player
+puts "Welome to Titanic.  Brought to you by Historically Accurate Games (tm)."
+puts "You are Captain Edward Smith."
+puts "Your destiny is fated as we know its outcome.  Use your  historical knowledge to recreate the event that happened on April 14, 1912."
+
+grid = Array.new(15) { Array.new(15 , "~")}
+
+player_x = 7
+player_y = 7
+# grid [rand(0..14)] [rand(0..14)] = "*"
+iceburg_x = rand (0..14)
+iceburg_y = rand (0..14)
+
+
+while (true)
+    grid [player_x][player_y] = "D"
+
+    grid.each { |row|
+        puts row.join("")
+        }   
+
+        puts "What direction do you want to go? (w, a, s, d, or q)"
+        direction = STDIN.getch
+
+    case direction
+        when "w"
+            # move up
+            if player_x != 0
+                grid [player_x][player_y] = "~"
+                player_x -= 1
+            else player_x = 0
+                puts "You have reached the end of the world."
+            end   
+        when "a"
+            if player_y != 0
+                grid [player_x][player_y] = "~"
+                player_y -= 1
+            else player_y = 0
+                puts "You have reached the end of the world."
+            end
+            # move left
+        when "s"
+            # move down
+            if player_x != 14
+                grid [player_x][player_y] = "~"
+                player_x += 1
+            else player_x = 14
+                puts "You have reached the end of the world."
+            end
+        when "d"
+            if player_y != 14
+                grid [player_x][player_y] = "~"
+                player_y += 1
+            else player_y = 14
+                puts "You have reached the end of the world."
+            end
+            # move right
+        when "q"
+            break
+            # end the game (control + c is broken when using STDIN.getch)
+     
+       end
+     if player_x == iceburg_x && player_y == iceburg_y
+         break
+     end
+    # if grid.flatten.include?("*") == false
+    #     break
+    # end
+end
+
+
+puts "Every night in my dreams"
+puts "I see you, I feel you"
+puts "That is how I know you go on"
+puts "Far across the distance"
+puts "And spaces between us"
+puts "You have come to show you go on"
+puts "Near, far, wherever you are"
+puts "I believe that the heart does go on"
+puts "Once more you open the door"
+puts "And you're here in my heart"
+puts "And my heart will go on and on"
+puts "Love can touch us one time"
+puts "And last for a lifetime"
+puts "And never let go 'til we're gone"
+puts "Love was when I loved you"
+puts "One true time I'd hold to"
+puts "In my life we'll always go on"
+puts "Near, far, wherever you are"
+puts "I believe that the heart does go on"
+puts "Once more you open the door"
+puts "And you're here in my heart"
+puts "And my heart will go on and on"
+puts "You're here, there's nothing I fear"
+puts "And I know that my heart will go on"
+puts "We'll stay forever this way"
+puts "You are safe in my heart and"
+puts "My heart will go on and on"
+
+
+# Array.new creates a new array with 0 spots
+# Array.new(10) creates a new array with 10 spots, each with no value
+# Array.new(10) {"hello"} creates a new array with 10 spots, each with the word "hello" in it
+
+# To create a grid, you want to create an array where each spot in the array holds its own array of spots
+
+# GAMERZ(tm) use wasd to replicate the arrow keys, especially because getting the arrow keys in the console is a pain in the butt
