@@ -1,0 +1,26 @@
+# first goal: display message letter by letter
+
+# ask for a message from the user
+puts "What message would you like to have translated into Braille?"
+message = gets.chomp
+
+# letter by letter, find out the braille for each letter?
+# for loop? each loop? each_char?
+
+# position-based indexing
+(0...message.length).each do |letter_position|
+    puts "The letter is: #{message[letter_position]}"
+end
+
+# each_char loop
+# collection-based processing
+message.each_char do |letter|
+    puts letter
+end
+
+# include the index!
+message.each_char.with_index do |letter, position|
+    puts "#{position}: #{letter}"
+end
+
+# display the braille
