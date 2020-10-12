@@ -1,0 +1,25 @@
+require 'io/console' # this is needed for STDIN.getch to work
+
+grid = Array.new(10) {Array.new(10) {0}}
+# Array.new creates a new array with 0 spots
+# Array.new(10) creates a new array with 10 spots, each with no value
+# Array.new(10) {"hello"} creates a new array with 10 spots, each with the word "hello" in it
+
+# To create a grid, you want to create an array where each spot in the array holds its own array of spots
+
+puts "What direction do you want to go? (w, a, s, d, or q)" # GAMERZ(tm) use wasd to replicate the arrow keys, especially because getting the arrow keys in the console is a pain in the butt
+
+direction = STDIN.getch
+
+case direction
+    when "w"
+        # move up
+    when "a"
+        # move left
+    when "s"
+        # move down
+    when "d"
+        # move right
+    when "q"
+        # end the game (control + c is broken when using STDIN.getch)
+end
