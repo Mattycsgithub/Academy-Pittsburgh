@@ -1,0 +1,69 @@
+require 'io/console' # this is needed for STDIN.getch to work
+
+def draw_grid grid, player_x, player_y
+    (0...10).each do |grid_y|
+        (0...10).each do |grid_x|
+            if (grid_x == player_x && grid_y == player_y)
+                print "@"
+            else
+                print grid[grid_y][grid_x]
+            end
+        end
+        puts
+    end
+    puts "Player X is #{player_x}"
+    puts "Player Y is #{player_y}"
+end
+
+# TO DO
+# Don't let player walk off the edge
+# Make it so I don't have to hit enter every time I type a direction
+# Make it so q quits
+# Make a thing to pick up
+
+# TO DONE
+# Create a board
+# Show the board
+# Show the player
+# Walk around the board
+
+grid = Array.new(10) { Array.new(10) { "." } }
+
+# Array.new(10) is the same as [nil, nil, nil, nil...]
+# Array.new(10){ 1 } is the same as [1, 1, 1, 1, 1...]
+
+player_x = 3
+player_y = 3
+# grid[player_y][player_x] = "@"
+
+draw_grid grid, player_x, player_y
+
+keep_playing = true
+while(keep_playing)
+    puts "What direction do you want to go? (user w, a, s, d, or q to quit)"
+    direction = STDIN.getch
+
+    
+    if direction == "w"
+        # moving up means player_y is smaller
+        if player_y > 0
+            player_y = player_y - 1
+        end
+    elsif direction == "s"
+        if player_y < 9 # cause we're adding 1 and 9 is the highest this can go
+            player_y = player_y + 1
+        end
+    elsif direction == "a"
+        if player_x > 0
+            player_x = player_x - 1
+        end
+    elsif direction == "d"
+        if player_x < 9
+            player_x = player_x + 1
+        end
+    elsif direction == "q"
+        keep_playing = false
+    end
+
+    draw_grid grid, player_x, player_y
+end
