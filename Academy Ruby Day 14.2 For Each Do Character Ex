@@ -1,0 +1,11 @@
+for character in message.split("")
+    puts character
+end
+
+message.split("").each do |letter|
+    puts letter
+end
+
+message.each_char do |letter|
+    puts letter
+end
