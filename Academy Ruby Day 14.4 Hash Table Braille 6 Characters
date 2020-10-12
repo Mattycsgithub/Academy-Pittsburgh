@@ -1,0 +1,40 @@
+puts "what is your message"
+message = gets.chomp
+
+# translation information
+# key is the roman letter, value is the morse code version
+morse_hash = {
+    "a" => ".-",
+    "b" => "-...",
+    "s" => "...",
+    "o" => "---",
+    " " => " "
+}
+
+# how to represent braille?!
+# - use the literal character from the internet
+# - spaces and periods, store as 3 hashes - {top: "• ", middle: "  ", bottom: "  "}
+# - 2 by 3 array [[1, 0], [0, 0], [0, 0]]
+# - string of 6 characters: "*-----"
+braille_hash = {
+    "a" => "-.....",
+    "b" => "-.-..."
+}
+
+# print all the top lines
+message.each_char do |character|
+    print "#{braille_hash[character][0]}#{braille_hash[character][1]} "
+end
+puts
+
+# print all the middle lines
+message.each_char do |character|
+    print "#{braille_hash[character][2..3]} "
+end
+puts
+
+# print all the bottom lines
+message.each_char do |character|
+    print "#{braille_hash[character][4,6]} "
+end
+puts
