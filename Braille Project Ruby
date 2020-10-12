@@ -1,0 +1,38 @@
+puts "Please enter a message to be converted:"
+message = gets.chomp.upcase
+braille = {"A" => ".     ","B" => ". .   ","C" => "..    ","D" => ".. .  ","E" => ".  .  ","F" => "...   ","G" => "....  ","H" => ". ..  ","I" => " ..   ","J" => " ...  ","K" => ".   . ","L" => ". . . ","M" => "..  . ","N" => ".. .. ","O" => ".  .. ","P" => "... . ","Q" => "..... ","R" => ". ... ","S" => " .. . ","T" => " .... ","U" => ".   ..","V" => ". . ..","W" => " ... .","X" => "..  ..","Y" => ".. ...","Z" => ".  ...","." => " .   .","0" => "   ...","1" => "  .   ","2" => "  . . ","3" => "  ..  ","4" => "  .. .","5" => "  .  .","6" => "  ... ","7" => "  ....","8" => "  . ..","9" => "   .. ", " " => "      "}
+
+message = message.each_char.to_a
+
+(0..(message.length - 1)).each do |index|
+    message[index] = braille[message[index]] 
+end
+
+message.each do |braille|
+    message[message.index(braille)] = [[braille[0],braille[1]],[braille[2],braille[3]],[braille[4],braille[5]]] # I'm so sorry
+end
+
+firstline = ""
+secondline = ""
+thirdline = ""
+
+message.each do |array|
+    firstline << array[0][0]
+    firstline << array[0][1]
+    firstline << " "
+end
+puts firstline
+
+message.each do |array|
+    secondline << array[1][0]
+    secondline << array[1][1]
+    secondline << " "
+end
+puts secondline
+
+message.each do |array|
+    thirdline << array[2][0]
+    thirdline << array[2][1]
+    thirdline << " "
+end
+puts thirdline
