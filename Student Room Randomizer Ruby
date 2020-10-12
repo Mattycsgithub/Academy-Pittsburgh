@@ -1,0 +1,73 @@
+# cool extras to try (TM):
+# allow for missing students (done)
+#     related: read students from file / put output into file (done)
+# allow for non-uniform room sizes (determined... how?)
+# make sure no rooms have only one student
+#     maybe: some other way of enforcing a minimum?  Do we prefer two rooms of 5 or one additional room of 2?  User choice?
+# clean up output slightly: there's probably some nice way to take blank lines off of the end of a file, right?
+
+# students.txt has each student's name on a separate line
+# to make the program ignore a student, put a * before the name in students.txt (or just delete them, but that seems hard to keep track of and also impolite)
+
+# grabs each name that's present, puts them in the students array, then shuffles students in-place
+students = []
+IO.foreach("students.txt") do |name|
+    if name[0] != "*"
+        students << name.chomp
+    end
+end
+students.shuffle!
+
+#setting up a few other things
+room_size = 4
+room_quantity = (students.length / room_size.to_f).ceil
+output = File.new("room_groupings.txt", "w")
+
+# puts out room #, then the name of the next 4 students in the array
+# current_student = 0
+# (1..room_quantity).each do |current_room|    
+#     output.puts "Room #{current_room}"
+#     room_size.times do
+#         output.puts students[current_student]
+#         current_student += 1
+#     end
+#     output.puts
+# end
+
+# alternate version, checks to see if we'll have any one-person rooms and if so makes a 5-person room instead
+current_student = 0
+(1..room_quantity).each do |current_room|
+    if students.length % room_size == 1 && current_room == room_quantity - 1
+        room_size += 1
+    end
+    output.puts "Room #{current_room}"
+    room_size.times do
+        output.puts students[current_student]
+        current_student += 1
+    end
+    output.puts
+end
+
+# another (WIP) alternate version, for doing stuff with room sizes and the like
+# instead of outputting directly to file, makes each room as an array of names
+# rooms = []
+# current_student = 0
+# room_quantity.times do |current_room|
+#     rooms << []
+#     room_size.times do
+#         if students[current_student] != nil
+#             rooms[current_room] << students[current_student]
+#             current_student += 1
+#         end
+#     end
+# end
+
+# rooms.each do |current_room|    
+#     output.puts "Room #{current_room}"
+#     room_size.times do
+#         output.puts students[current_student]
+#         current_student += 1
+#     end
+#     output.puts
+# end
+karisafernandez sent an image
