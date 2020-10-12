@@ -1,0 +1,56 @@
+# while loops in ruby
+#   using booleans to control it
+#   similar to C#
+#   end in ruby is like } in C#
+# arrays in ruby
+#   .push to add things in (at the end)
+#       << also does this (shovel operator)
+#   arrays in ruby just add things in!
+# can put your terminal inside of visual studio (thanks, Jinah!)
+
+# TODO:
+# what if they try to retrieve a message that's not there?
+# ability to delete the messages
+#   clear all messages (see Karisa's code)
+# encryption
+# password protection
+# see all the messages
+# choose where to put your message
+# save messages so when you close and open the program, they're still there.
+
+# setup of variables
+messages = ["!!!!", "Jean", "horse"]
+
+while true
+    # ask the user for what they want to do
+    # print menu
+    puts "What do you want to do?"
+    puts "a) save a message"
+    puts "b) retrieve a message"
+    puts "q) quit"
+
+    user_answer = gets.downcase.chomp
+
+    # depending on their answer, do something different
+    if user_answer == "a"
+        puts "you are saving!"
+        # ask them for their message
+        puts "WHAT IS YOUR MESSAGE"
+        user_message = gets.chomp
+        # stick it on the end of the array
+        messages << user_message
+        # tell them the number
+        puts "your message number is: #{messages.length}"
+    elsif user_answer == "b"
+        puts "you are retrieving"
+        # [ask] the user what *box_number*
+        puts "Hey user, what number message do you want to retrieve? What's your ID?!!"
+        box_number = gets.to_i
+        # [tell] them what's in the box
+        puts "Your message is #{messages[box_number - 1]}"
+    else
+        puts "you didn't enter a or b!"
+    end
+
+    puts
+end
