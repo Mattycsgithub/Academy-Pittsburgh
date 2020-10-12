@@ -1,0 +1,17 @@
+# using a one-dimensional array
+array = ["jean", "hello", "world"]
+# access first position
+puts array[0]
+
+
+# using a two-dimensional array
+# creating it - put arrays in each position inside an array
+two_d = [[1, 2], [3, 4], [5, 6], [1,6]]
+two_d[0] # [1,2]
+two_d[3] # [1,6]
+
+# pointing to the 5
+two_d[2] # [5, 6]
+two_d[2][0] # 5
+# reassigning that position
+two_d[2][0] = "red"
