@@ -1,0 +1,29 @@
+def whatever_you_want_to_call_it
+    puts "Hi there"
+    puts "I'm in a function"
+    "Hi there, I'm a value that was returned!"
+end
+
+def add number1, number2
+    if number1 > 10
+        return "that's too big, I can't do that math"
+    end
+    if number2 < 2
+        return "That second number isn't big enough"
+    end
+    number1 + number2
+end
+
+
+
+puts 1 + 2
+puts add(1, 2) # ruby jumps up to line 7, runs all of that code, then comes back with the number 3 and turns this line into puts 3
+puts add(5.3, 2000)
+puts add("john", " is cool")
+puts add(15, 5)
+puts add(8, 1)
+puts whatever_you_want_to_call_it
+#add 3, "hello" # this breaks cause ruby can't add a string and int
+#add "only one thing" # this breaks because add needs to have two values, not one
+
+
