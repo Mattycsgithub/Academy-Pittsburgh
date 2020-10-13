@@ -1,0 +1,34 @@
+sample _hash = {'a'=> 1, 'b'=> 2,'c'=> 3} #identifiers are set to strings
+my_details {'name' => matt, 'favcolor' => 'blue'}
+print my_details['favcolor'] #equals blue due to hash identifier
+p sample_hash['b'] #equals due to hash identifier
+another_hash = {a: 1, b: 2, c: 3} #identifiers are set to symbols ideally for unchanged things
+#more examples symbol identifiers :username, :session, or :user_id
+another_hash = [:a] #equal 1 due to the sybmol idenitifer
+sample_hash.keys #returns all the keys for said hash table as an array
+sample_hash.values #returns all the values for said hash table as an array
+
+sample_hash.each do |key, value|
+    puts "The class for key is #{key.class} and the value is #{value.class}" 
+end
+# The class for key is string and the value is integer
+
+
+my_details do |key, value|
+    puts "The class for key is #{key.class} and the value is #{value.class}"
+end
+# The class for key is string and the value is string
+
+another_hash do |key, value|
+    puts "The class for key is #{key.class} and the value is #{value.class}"
+end
+# The class for key is symbol and the value is integer
+
+my_hash = {a: 1, b: 2, c: 3, d: 4}
+my_hash[:e] = "Matt" #adds hash e: value "Matt" tot he end of the hash
+my_hash[:c] = "Ruby" #reassigns c: identifier to value "Ruby"
+my_details.each {|some_key, some_value| puts "The key is #{some_key} and the value is #{some_value}"
+#outputs the cuurent keys and thier currently assigned values with recent changes of "Matt" and "Ruby"
+my_hash.select{|k, v.is_a?(String)|} #outputs the values for keys which are strings
+my_details.each{|k, v| my hash.delete(k) if v.is_a?(String)} #deletes keys thus values from hash table that are strings
+#hash table now only consists of a:, b:, & d:
