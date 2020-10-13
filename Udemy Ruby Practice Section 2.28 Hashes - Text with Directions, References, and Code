@@ -11,7 +11,7 @@ sample_hash.values #returns all the values for said hash table as an array
 sample_hash.each do |key, value|
     puts "The class for key is #{key.class} and the value is #{value.class}" 
 end
-# The class for key is string and the value is integer
+#The class for key is string and the value is integer
 
 
 my_details do |key, value|
