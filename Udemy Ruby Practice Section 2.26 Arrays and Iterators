@@ -10,3 +10,44 @@ x.to_a.shuffle! #converts x to a shuffled array
 z = x.to_a.shuffle! #makes variable equal to 
 x = a..z #create a range of letters
 x.to_a #converts 
+x = (1..10).to_a #creates an array of 1-10
+x.reverse #reverses array output
+x.reverse! #mutates array to reverse output 
+x = "a".."z" #creates an range of letters as strings a-z
+x.to_a #outputs range into an array
+x.to_a.shuffle #outputs range into a shuffled array
+y = x.to_a.shuffle #creates a shuffled array, y, of the letters as strings a-z 
+y.length #26 or the length of the shuffled array as an integer
+a = [1,2,3,4,5,6,7,8,9]
+a << 10 #adds the number 10 onto the end of the array
+a.first #outputs the first input of the array
+a.last #outputs the last input in array
+a.unshift ("Matt") #adds input to the front of an array
+a.append ("Matt") # adds input to the end of an array
+a.uniq! #removes duplicate inputs in an array
+a.empty? #returns false because the aray has values
+b = []
+b.empy? #equals true because the array is empty with no values assigned
+a.include?("Matt") #equals true as "Matt" is a value in the array
+a.include?("Clark") #equals false as "Clark" is not a value in the array
+a.push("new item") #adds a new item to the end of the array
+b = a.pop()#takes the last item of the array and reassigns it to b removing it from the array
+b = "new item" #due to the previous item being removed from the array
+a.join #outputs all the items in an array and outputs them in one order as a string
+a.join("-") #outputs all the items in an array and adds them together in one string seperated by dashes
+a.join(", ")  #outputs the same as avove but adds a comma space between each item in the string 
+b = a.join("-") #sets variable b equal to the the array a [] joined by dashes as a string
+b.split #outputs the string as one item in an array
+b.split("-") #outputs the string as an array into individual items by dashes as the separator
+%w(my name is Matt aand this is great Ruby is amazing) #ouputs an array with each element in ()
+z = _ #takes the last expression and sets it equal to z which is what is above
+for i in z  #old method for printing an array like in C# for loop
+    print i + " "
+end
+z.each do |whatevervariable| #prefered method in Ruby uses for each loop can use whatever variable you want
+    print whatevervariable + " "
+end
+z.each{|whatevervariable| print whatevervariable + " "} #sames as above on one line ultra preferred method
+z.each{|whatevervariable| print whatevervariable.capitalize + " "} #can run methods on variables in each do loop
+z = (1..100).to_a.shuffle #creating an variable z equal to an random shuffled array of numbers 1-100
+z.select {|number| number.odd?} #outputs odd numbers in z array
