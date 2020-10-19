@@ -1,0 +1,33 @@
+using System;
+using System.Data;
+using Mono.Data.Sqlite;
+
+
+namespace DatabaseExample
+{
+    class MainClass
+    {
+        public static void Main(string[] args)
+        {
+            Console.WriteLine("Hello World!");
+
+            SqliteConnection connection;
+            connection = new SqliteConnection(@"Data Source=/Users/matthewj.clark/Documents/Bootcamp/database/firstdatabase.sqlite;");
+
+            SqliteCommand command = new SqliteCommand("SELECT * from AdressBook", connection);
+            connection.Open();
+            SqliteDataReader dataReader = command.ExecuteReader();
+
+            if (dataReader.HasRows)
+            {
+                while (dataReader.Read())
+                {
+                    Console.WriteLine(dataReader["Names"]);
+                }
+            }
+            dataReader.Close();
+            connection.Close();
+
+        }
+    }
+}
