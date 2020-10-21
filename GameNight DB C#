@@ -1,0 +1,82 @@
+using System;
+using System.Data;
+using Mono.Data.Sqlite;
+
+namespace DatabaseExample
+{
+    class MainClass
+    {
+        public static void Main(string[] args)
+        {
+            SqliteConnection connection = new SqliteConnection(@"Data Source=/Users/matthewj.clark/Documents/Bootcamp/database/firstdatabase.sqlite;");
+
+            SqliteCommand command = new SqliteCommand("SELECT * from Gamenight", connection);
+            connection.Open();
+            bool quit = false;
+         
+
+            while (quit == false)
+            {
+                Console.WriteLine("Would you like to 'V' View, 'A' Add, 'U' Update, or 'Q' Quit database?");
+                string choice = Console.ReadLine().ToUpper();
+
+                if (choice == "V")
+                {
+                    SqliteDataReader dataReader = command.ExecuteReader();
+                    if (dataReader.HasRows)
+                    {
+                        while (dataReader.Read())
+                        {
+                            Console.Write(dataReader["People"]);
+                            Console.Write(dataReader["Games"]);
+                            Console.WriteLine(dataReader["Snacks"]);
+                        }
+                    }
+                    dataReader.Close();
+                }
+
+                if (choice == "A")
+                {
+                    Console.WriteLine("Who is coming to gamenight?");
+                    string person = Console.ReadLine();
+                    Console.WriteLine("What is the game they would like to play?");
+                    string game = Console.ReadLine();
+                    Console.WriteLine("What is their favorite snack?");
+                    string snack = Console.ReadLine();
+                    SqliteCommand insert = new SqliteCommand($"INSERT INTO [GameNight] ([People], [Games], [Snacks]) Values ('{person}', '{game}', '{snack}')", connection);
+    
+                    SqliteDataReader insertReader = insert.ExecuteReader();
+                }
+
+                if (choice == "U")
+                {
+                    //code goes here
+                    Console.WriteLine("What would you like to update?");
+                    //Console.WriteLine("Here are yuor otions.");
+                    SqliteDataReader dataReader = command.ExecuteReader();
+                    /*if (dataReader.HasRows)
+                    {
+                        while (dataReader.Read())
+                        {
+                            Console.Write(dataReader["People"]);
+                            Console.Write(dataReader["Games"]);
+                            Console.WriteLine(dataReader["Snacks"]);
+                        }
+                    }*/
+                    SqliteCommand update = new SqliteCommand ("UPDATE '")
+                }
+
+
+                if (choice == "Q")
+                {
+                    quit = true;
+                }   
+
+            }
+         
+
+            connection.Close();
+
+        }
+    }
+}
