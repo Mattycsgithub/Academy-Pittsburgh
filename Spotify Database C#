@@ -1,0 +1,83 @@
+using System;
+using System.Data;
+using Mono.Data.Sqlite;
+
+namespace DatabaseExample
+{
+    class MainClass
+    {
+        public static void Main(string[] args)
+        {
+            //This is where are accessing the database where it is saved on a mac when using Sqlite.
+            SqliteConnection connection = new SqliteConnection(@"Data Source=/Users/matthewj.clark/Documents/Bootcamp/database/firstdatabase.sqlite;");
+
+            //This is where we open the connection.
+            SqliteCommand command = new SqliteCommand("SELECT * from Album2 JOIN Songs2 ON ALBUM2.ALBUMID = SONGS2.ALBUMID", connection);
+            connection.Open();
+            bool quit = false;
+         
+            // May have to have two different while loops.  
+            while (quit == false)
+            {
+                Console.WriteLine("Would you like to 'V' View, 'A' Add Album, 'S' Add Song 'U' Update, or 'Q' Quit Album Database?");
+                string choice = Console.ReadLine().ToUpper();
+
+                if (choice == "V")
+                {
+                    SqliteDataReader dataReader = command.ExecuteReader();
+                    if (dataReader.HasRows)
+                    {
+                        while (dataReader.Read())
+                        {
+                            Console.Write(dataReader["AlbumID"]);
+                            Console.Write(dataReader["Artist"]);
+                            Console.Write(dataReader["SongTitle"]);
+                            Console.WriteLine(dataReader["AlbumTitle"]);
+                        }
+                    }
+                    dataReader.Close();
+                }
+
+                if (choice == "A")
+                {
+                    Console.WriteLine("What is the artist you would like to add?");
+                    string artist = Console.ReadLine();
+                    Console.WriteLine("What album would you like to add?");
+                    string albumTitle = Console.ReadLine();
+                    SqliteCommand insert = new SqliteCommand($"INSERT INTO [Album2] ( [Artist], [AlbumTitle]) Values ('{artist}', '{albumTitle}')", connection);
+                    insert.ExecuteNonQuery();
+                }
+
+                if (choice == "S")
+                {
+                    Console.WriteLine("What is the song you woul like to add?");
+                    string songTitle = Console.ReadLine();
+                    Console.WriteLine("What AlbumID would you like to add?");
+                    int albumID = Convert.ToInt32(Console.ReadLine());
+                    SqliteCommand insert = new SqliteCommand($"INSERT INTO [Songs2] ( [songTitle], [AlbumID]) Values ('{songTitle}', '{albumID}')", connection);
+                    insert.ExecuteNonQuery();
+                }
+
+                if (choice == "U")
+                {
+                    Console.WriteLine("What song would you like to update");
+                    int songID = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine("What is the new song title?");
+                    string songTitle = Console.ReadLine();
+                    SqliteCommand updateSong = new SqliteCommand($"UPDATE [Songs2] SET [songTitle] =  '{songTitle}' WHERE [SongID] = '{songID}'", connection);
+                    updateSong.ExecuteNonQuery();
+                }
+
+                if (choice == "Q")
+                {
+                    quit = true;
+                }   
+
+            }
+         
+
+            connection.Close();
+
+        }
+    }
+}
