@@ -1,0 +1,87 @@
+using System;
+using System.Data;
+using Mono.Data.Sqlite;
+
+namespace DatabaseExample
+{
+    class MainClass
+    {
+        public static void Main(string[] args)
+        {
+            //This is where are accessing the database where it is saved on a mac when using Sqlite.
+            SqliteConnection connection = new SqliteConnection(@"Data Source=/Users/matthewj.clark/Documents/Bootcamp/database/firstdatabase.sqlite;");
+
+            //This is where we open the connection.
+            SqliteCommand command = new SqliteCommand("SELECT * FROM Twitter JOIN Users ON TWITTER.USERID = USERS.USERID ORDER BY TweetID DESC", connection);
+            connection.Open();
+            bool quit = false;
+         
+            // Can do this all in while loop  
+            while (quit == false)
+            {
+                //Menu options
+                Console.WriteLine("Would you like to 'V' View Twitter, 'C' Create UserName, 'T' Tweet 'D' Delete, or 'Q' Quit  Database?");
+                string choice = Console.ReadLine().ToUpper();
+
+                if (choice == "V")
+                {
+                    SqliteDataReader dataReader = command.ExecuteReader();
+                    if (dataReader.HasRows)
+                    {
+                        while (dataReader.Read())
+                        {
+                            Console.Write(dataReader["UserName"]);
+                            Console.Write(dataReader["Tweets"]);
+                        }
+                    }
+                    dataReader.Close();
+                }
+                //Where user creates userID
+                if (choice == "C")
+                {
+                    Console.WriteLine("What would would you like your UserName to be?");
+                    string userName = Console.ReadLine();
+                    Console.WriteLine("What would you like your Password to be?");
+                    string password = Console.ReadLine();
+                    SqliteCommand insert = new SqliteCommand($"INSERT INTO [Users] ( [Username], [Password]) Values ('{userName}', '{password}')", connection);
+                    insert.ExecuteNonQuery();
+                }
+                //Where password is going to be required.
+                if (choice == "T")
+                {
+                    Console.WriteLine("What is your userName?");
+                    string userAttempt = Console.ReadLine();
+                    Console.WriteLine("What is your password?");
+                    string passwordAttempt = Console.ReadLine();
+
+                    SqliteCommand command2 = new SqliteCommand($"SELECT COUNT(UserID) FROM Users WHERE Password = '{passwordAttempt}' AND UserName = '{passwordAttempt}'  ", connection);
+                    
+
+                    if (command2.ExecuteReader() == 1)
+                    {
+                        Console.WriteLine("What would you like to Tweet?");
+                        string tweet = Console.ReadLine();
+                        Console.WriteLine("What is you UserID number");
+                        int userID = Convert.ToInt32(Console.ReadLine());
+                        SqliteCommand insert = new SqliteCommand($"INSERT INTO [Twitter] ( [Tweets], [UserID]) Values ('{tweet}', '{userID}')", connection);
+                        insert.ExecuteNonQuery();
+                    }
+                    else
+                        Console.WriteLine("Either your Username or Password is incorrect");
+
+                }
+
+                
+                if (choice == "Q")
+                {
+                    quit = true;
+                }   
+
+            }
+         
+
+            connection.Close();
+
+        }
+    }
+}
