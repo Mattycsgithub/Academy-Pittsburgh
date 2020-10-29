@@ -1,0 +1,9 @@
+SELECT * FROM [Questions] 
+JOIN Answers ON Questions.Id = Answers.QuestionId
+WHERE QuizId = 11
+
+-- Please grab all of the questions and related answers
+-- you know they're related because in the questions table, the id field will
+-- match the QuestionId field in the Answers table.
+-- Repeat Questions as much as you have to for each individual answer
+-- so all answers are shown
