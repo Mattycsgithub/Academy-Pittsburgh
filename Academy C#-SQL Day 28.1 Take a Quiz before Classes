@@ -1,0 +1,90 @@
+using System;
+using System.Collections.Generic;
+using System.Data.SqlClient;
+
+namespace BuzzfeedTaker
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // Take a quiz
+            // First, list out all of the quizzes
+            // Let the user pick which quiz to do
+            // Show the first question
+            // Show the list of answers possible from that question
+            // Get the user's answer
+            // Save it
+            // Repeat for the next questions until done
+            // Tally their score, show the right result
+
+            // Setup my database so I can get them quizzes
+            SqlConnection connection = new SqlConnection(@"Data Source=minecraft.lfgpgh.com;Initial Catalog=Buzzfeed_5;User ID=academy_student;Password=12345");
+            connection.Open();
+            SqlCommand cmd;
+            SqlDataReader reader;
+
+
+            // List all of the quizzes
+            cmd = new SqlCommand("SELECT * FROM Quizzes", connection);
+
+            reader = cmd.ExecuteReader();
+            while(reader.Read())
+            {
+                Console.WriteLine(reader["Id"] + ") " + reader["Name"]);
+            }
+            reader.Close();
+
+
+            // Let the user pick which one they want to take
+            Console.WriteLine("Which one do you want to take?");
+            string quizId = Console.ReadLine();
+
+            // Show the first question
+            cmd = new SqlCommand("SELECT *, Answers.Id AS AmzerId  FROM [Questions] JOIN Answers ON Questions.Id = Answers.QuestionId WHERE QuizId=" + quizId, connection);
+            SqlDataReader questionReader = cmd.ExecuteReader();
+            bool firstTimeShowingQuestion = true;
+            bool isVeryVeryFirstTime = true;
+            List<string> answers = new List<string>();
+            string previousQuestion = "";
+            while (questionReader.Read())
+            {
+                // hey, if we are on a new question
+                // can we set firstTimeShowingQuestion to true again
+                if(questionReader["Prompt"].ToString() != previousQuestion)
+                {
+                    if (!isVeryVeryFirstTime)
+                    {
+                        Console.WriteLine("What is your answer?");
+                        answers.Add(Console.ReadLine());
+                    }
+                    firstTimeShowingQuestion = true;
+                    previousQuestion = questionReader["Prompt"].ToString();
+                }
+                if(firstTimeShowingQuestion)
+                {
+                    // if it's the first time we're seeing this question
+                    // print out the question
+                    Console.WriteLine(questionReader["Prompt"]);
+                    firstTimeShowingQuestion = false;
+                }
+                // print out the answers
+                Console.WriteLine(questionReader["AmzerId"] + ")   " + questionReader["Body"]);
+
+                isVeryVeryFirstTime = false;
+            }
+            Console.WriteLine("What is your answer?");
+            answers.Add(Console.ReadLine());
+            // loop over answers
+            // for each one, do an insert
+            // INSERT INTO UserAnswers (UserId, AnswerID) VALUES ({SomeUserId}, {CurrentAnswerId})
+
+            reader.Close();
+
+
+
+            connection.Close();
+        }
+    }
+}
+
