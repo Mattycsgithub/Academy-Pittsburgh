@@ -1,0 +1,26 @@
+-- show me all the rows!
+--SELECT * FROM People;
+
+-- add a row here
+--INSERT INTO People (Name, FavoriteColor, FavoriteNumber) VALUES ('Jasmine''s dude', 'Bright orange', 22);
+
+-- update a row? Edit it.
+-- WARNING: no WHERE clause, ALL ROWS WILL BE UPDATED
+-- There is no undo
+--UPDATE People SET Name='Bobosaur'
+
+-- update only one row with some value
+-- update the row with the favorite color 'vampire'
+--UPDATE People SET Name='Jeananop' WHERE FavoriteColor='Vampire'
+
+-- discussion about identity
+-- when you run an insert, sometimes it's useful to get back an id.
+-- The special variable 'rowid' allows you to return the rowid as a printable, useable thing
+-- 'AS' renames columns in this view of it.
+--SELECT ROWID AS ID, Name, FavoriteColor, FavoriteNumber AS [Number] FROM People;
+
+INSERT INTO People 
+(Name, FavoriteColor, FavoriteNumber)
+VALUES ('Mars', 'Mom', 0);
+
+SELECT last_insert_rowid() AS Id
