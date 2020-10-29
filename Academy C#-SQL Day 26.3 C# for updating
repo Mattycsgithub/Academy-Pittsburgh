@@ -1,0 +1,55 @@
+using System;
+using Mono.Data.Sqlite;
+
+namespace updatedb
+{
+    class MainClass
+    {
+        public static void Main(string[] args)
+        {
+            Console.WriteLine("Hello World!");
+            // connection - open it to use it - this is where I say /where/ my db is.
+            SqliteConnection myConnection = new SqliteConnection(@"Data Source=/Users/jean/databases/update-db.sqlite;");
+            myConnection.Open();
+
+            // command - this is where I type my sql
+            // takes two parts: SQL statement and connection object
+            string mySqlStatement = "UPDATE People SET Name='Jeananop from C#' WHERE FavoriteColor='Vampire'";
+            SqliteCommand updateCommand = new SqliteCommand(mySqlStatement, myConnection);
+
+            // reader - make the command go
+            SqliteDataReader myReader = updateCommand.ExecuteReader();
+
+            myReader.Close();
+
+
+            // new section that prints out values from the database.
+            mySqlStatement = "SELECT ROWID, * FROM People";
+            updateCommand = new SqliteCommand(mySqlStatement, myConnection);
+            myReader = updateCommand.ExecuteReader();
+
+            while(myReader.Read())
+            {
+                Console.Write(myReader["rowid"]);
+                Console.WriteLine(myReader["Name"]);
+            }
+
+            myConnection.Close();
+
+
+
+
+            string myString = "jean";
+            myString = "mindy";
+
+            Frog myFrog = new Frog();
+            myFrog = new Frog();
+        }
+    }
+
+    class Frog
+    {
+
+    }
+}
+
