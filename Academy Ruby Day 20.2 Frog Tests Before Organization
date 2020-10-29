@@ -1,0 +1,38 @@
+require "frog"
+
+describe Frog do
+    it "can speak" do
+        my_frog_alfredo = Frog.new
+        word = my_frog_alfredo.speak
+        expect(word).to eql("ribbit")
+    end
+
+    it "can learn a new word" do
+        # function that will be called here is named 'initialize'
+        my_frog_damien = Frog.new("crrrrooooaak")
+        word = my_frog_damien.speak
+        expect(word).to eql("crrrrooooaak")
+
+        # future frogs will still say "ribbit" by default
+        # new_frog = Frog.new
+        # puts "new frog says: #{new_frog.speak}"
+    end
+
+    # it "here are some experiments" do
+    #     # can I access @word from outside the class?
+    #     new_frog = Frog.new
+    #     puts new_frog.word
+    # end
+
+    it "can tell me how many rs it has in its word" do
+        jill_frog = Frog.new
+        number_of_rs = jill_frog.count_rs
+        expect(number_of_rs).to eql(1)
+    end
+
+    it "can tell me how many rs it has in its word even with a custom word" do
+        jill_frog = Frog.new("rrrrr")
+        number_of_rs = jill_frog.count_rs
+        expect(number_of_rs).to eql(5)
+    end
+end
