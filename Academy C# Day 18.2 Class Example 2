@@ -1,0 +1,35 @@
+class Pizza
+    attr_accessor :size
+    attr_accessor :sauce
+    attr_accessor :toppings
+    # @crust lives here
+
+    def set_crust crust_type
+        # regular, stuffed, none
+        if crust_type == "regular" || crust_type == "stuffed" || crust_type == "none"
+            @crust = crust_type
+        else
+            @crust = "regular"
+        end
+    end
+
+    def get_crust
+        return @crust
+    end
+end
+
+john_pizza = Pizza.new
+john_pizza.set_crust "Yes"
+john_pizza.size = "Some"
+john_pizza.sauce = "Red"
+john_pizza.toppings = ["cheese", "pepperoni"]
+
+jean_pizza = Pizza.new
+jean_pizza.set_crust "Regular"
+
+puts john_pizza.get_crust
+puts john_pizza.size
+puts john_pizza.sauce
+puts john_pizza.toppings
+
+puts jean_pizza
