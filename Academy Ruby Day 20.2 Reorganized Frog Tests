@@ -1,0 +1,30 @@
+require "frog"
+
+describe Frog do
+    context "default frogs" do
+        let(:our_frog) { Frog.new }
+
+        it "can speak" do
+            word = our_frog.speak
+            expect(word).to eql("ribbit")
+        end
+
+        it "can tell me how many rs it has in its word" do
+            number_of_rs = our_frog.count_rs
+            expect(number_of_rs).to eql(1)
+        end
+    end
+
+    context "custom frogs" do
+        let(:our_frog) { Frog.new("crrrrooooaak") }
+        it "can learn a new word" do
+            word = our_frog.speak
+            expect(word).to eql("crrrrooooaak")
+        end
+
+        it "can tell me how many rs it has in its word" do
+            number_of_rs = our_frog.count_rs
+            expect(number_of_rs).to eql(4)
+        end
+    end
+end
