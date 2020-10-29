@@ -1,0 +1,43 @@
+using System;
+using System.Data.SqlClient;
+
+namespace DatabaseExample
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello World!");
+
+            SqlConnection somename = new SqlConnection(@"Data Source=(LocalDb)\MSSQLLocalDB;AttachDbFilename=C:\Users\john\source\repos\DatabaseExample\DatabaseExample\Database1.mdf;Integrated Security=True");
+            somename.Open();
+            // Open up that database - get that data file name
+            // Connection - ConnectionString (what database am I connecting to?)
+
+            Console.WriteLine("What name do you want to add?");
+            string name = Console.ReadLine();
+
+            SqlCommand command = new SqlCommand($"INSERT INTO Addresses (Name, Address) VALUES ('{name}', 'This is from C#!')", somename);
+            // Get all of the addresses rows - SELECT * FROM Addresses
+            // Command
+
+            SqlDataReader reader = command.ExecuteReader();
+            // Print them out in the console - Console.WriteLine
+            // Reader/Response
+            reader.Close();
+
+            SqlCommand command2 = new SqlCommand("SELECT * FROM Addresses", somename);
+            SqlDataReader reader2 = command2.ExecuteReader();
+
+            while(reader2.Read())
+            {
+                Console.WriteLine(reader2["Name"]);
+                Console.WriteLine(reader2["Address"]);
+            }
+            reader2.Close();
+
+            somename.Close();
+        }
+    }
+}
+
