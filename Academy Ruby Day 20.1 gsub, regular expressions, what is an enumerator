@@ -1,0 +1,18 @@
+# what is an enumerator?
+# see enumerable: https://ruby-doc.org/core-2.7.2/Enumerable.html
+# it is the thing that points to each part of a collection
+# "hello".each_char do |letter|
+#     puts letter
+# end
+
+# what is gsub?
+# global substitution
+puts "hello".sub("he", "jean") # jeanllo
+puts "hello".sub("l", "m") # hemmo? actually hemlo - only replaces the first l
+puts "hello".gsub("l", "m") # hemmo
+
+# what is regex? - what is a "regular expression"?
+# try them out at https://regex101.com/
+# it's another type like 'string' or 'symbol' that allows you to find /matches/ for a pattern
+# don't parse HTML with regex: https://stackoverflow.com/questions/1732348/regex-match-open-tags-except-xhtml-self-contained-tags
+puts "!@$%$%hello   !@#$!%".gsub(/[^a-z]/, "")
