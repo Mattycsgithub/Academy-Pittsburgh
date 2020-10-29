@@ -1,0 +1,22 @@
+class Pizza
+    attr_accessor :crust
+    attr_accessor :size
+    attr_accessor :sauce
+    attr_accessor :toppings
+end
+
+john_pizza = Pizza.new
+john_pizza.crust = "Yes"
+john_pizza.size = "Some"
+john_pizza.sauce = "Red"
+john_pizza.toppings = ["cheese", "pepperoni"]
+
+jean_pizza = Pizza.new
+jean_pizza.crust = "Regular"
+
+puts john_pizza.crust
+puts john_pizza.size
+puts john_pizza.sauce
+puts john_pizza.toppings
+
+puts jean_pizza
