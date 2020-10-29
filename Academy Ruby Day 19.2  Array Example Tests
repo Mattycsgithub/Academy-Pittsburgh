@@ -1,0 +1,7 @@
+    it "can tell two arrays are equal" do
+        expect([1, 2, 3]).to eql [1, 2, 3]
+    end
+
+    it "can tell two arrays are not equal when they're in different orders" do
+        expect([1, 2, 3]).to_not eql [3, 2, 1]
+    end
