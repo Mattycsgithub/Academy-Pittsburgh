@@ -1,0 +1,5 @@
+CREATE TABLE Addresses (
+	StreetName TEXT,
+	State TEXT,
+	ZipCode TEXT
+);
