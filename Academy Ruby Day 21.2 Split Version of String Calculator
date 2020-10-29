@@ -1,0 +1,16 @@
+class StringCalculator
+    def calculate the_string
+        # find the parts
+        math_array = the_string.split("+")
+
+        while math_array.length > 1
+            result = math_array[0].to_i + math_array[1].to_i
+            math_array.delete_at(0)
+            math_array.delete_at(0)
+            math_array.unshift(result)
+        end
+
+        # return the answer
+        return result
+    end
+end
