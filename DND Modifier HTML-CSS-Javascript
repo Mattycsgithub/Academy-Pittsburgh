@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DnD Stats Calc</title>
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+    <style>
+        html
+        {
+            background-image: url('https://i.redd.it/d42vhngqhdi41.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size:cover;
+            font-family: 'MedievalSharp', cursive;
+        }
+        
+        body
+        {
+            background-image: url('https://i.pinimg.com/originals/6b/72/23/6b7223d0def9fb19401c5758808f4178.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-size: 29em;
+            font-family: 'MedievalSharp', cursive;
+        }
+
+        button
+        {
+            font-family: 'MedievalSharp', cursive;  
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            margin-left: 5em;
+        }
+
+        .bodytext
+        {
+            margin-left: 20px;
+        }
+        h1
+        {
+            margin-left: 20px;
+            margin-top: 2em;
+            font-size: xx-large;
+            font-weight: bold;
+        }
+    </style>
+    <script>
+        function calculateModifiers() {
+            // loop ver.
+            var statPs = document.getElementById("stats").getElementsByTagName("p") // returns a list of all <p>s that are children of the "stats" div
+            for (var stat of statPs) {
+                var inputField = stat.getElementsByTagName("input")[0]; // not into this, is there a cleaner way to grab just one?
+                var outputSpan = stat.getElementsByTagName("span")[0];
+                var modifier = Math.floor((inputField.value - 10) / 2);
+                outputSpan.innerHTML = modifier;
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>DND CHARACTER MODIFIER</h1>
+    <div id="stats" class="bodytext">
+        <p>STR:   <input id="str" type="text"><span id="str_modifier"></span></p>  
+        <p>DEX:   <input id="dex" type="text"><span id="dex_modifier"></span></p>
+        <p>CON: <input id="con" type="text"><span id="con_modifier"></span></p>
+        <p>INTS: <input id="int" type="text"><span id="int_modifier"></span></p>
+        <p>WSD:<input id="wis" type="text"><span id="wis_modifier"></span></p>
+        <p>CHA: <input id="cha" type="text"><span id="cha_modifier"></span></p>
+        <button onclick="calculateModifiers()">CALCULATE</button>
+    </div>
+    <br>
+    <br>
+</body>
+</html>
