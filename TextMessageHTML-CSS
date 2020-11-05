@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Coustard&display=swap" rel="stylesheet">
+    <style>
+        html
+        {
+            background-image: url('https://larsonteaching.files.wordpress.com/2017/02/focus-medical-musings-on-health-from-dr-kali-macisaac.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size:cover;
+       
+        }
+        body 
+        {
+            margin: 10em;
+            padding: 3em;
+            background-image: url('https://mobilefirstplatform.ibmcloud.com/assets/blog/2018-10-16-Ionic-MobileFirst-Blank-Screen/ionic-blank-screen.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            font-family: 'Coustard', serif;
+            display:inline-block;
+         }
+        
+         
+         .leftaligned
+         {
+            background-color: lightgrey;
+            float: left;
+            clear: both;
+            text-align: left;
+            max-width: 10em;
+            font-size: small;
+            border-radius: 10px;
+            padding: .25em
+         }
+         .rightaligned
+        {
+            background-color: lightskyblue;
+            clear: both;
+            float: right;
+            max-width: 10em;
+            text-align: right;
+            font-size: small;
+            border-radius: 10px;
+            padding: .25em
+        }
+
+    </style>
+    </head>
+    <body>
+        <h2>Matt's iPhone 12</h2>
+            <p class = leftaligned>Why do storm troopers only have iPhones?</p>
+            
+            <p class = rightaligned>I don't know why?</p> 
+            
+            <p class = leftaligned>Because they couldn't find the Androids they were looking for!</p>
+            
+            <p class = rightaligned>::facepalm::</p>
+            
+            <p class = leftaligned>Eh?!</p>
+           
+            <p class = rightaligned>Hilarious Dad...</p>
+    </body>
+</html>
