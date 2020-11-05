@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,400;1,200&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        html
+        {
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 21px;
+            color: antiquewhite;
+            background-image: url('https://images.idgesg.net/images/article/2019/12/macos-catalina-desktop-100820410-large.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size:cover;
+        }
+
+        .bounds
+        {
+            
+            margin: auto;
+            margin-top: 50px;
+            border: 4px solid #413d3d;
+            border-radius: 10px;
+            width: 220px;
+            height: 320px;
+
+            position: relative;
+            pointer-events: none;
+        }
+        .border
+        {
+            top: -4px;
+            left: -4px;
+            width: 220px;
+            height: 320px;
+            border: 4px solid #413d3d;
+            border-radius: 10px;
+            position: absolute;
+            z-index: 1000;
+        }
+        .display
+        {
+            font-weight: 200;
+            font-size: 48px;
+            background-color: #413d3d;
+            width: 220px;
+            height: 70px;
+            position: relative;
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+        }
+        
+        .keypad
+        {
+            width: 220px;
+            height: 320px;
+            position: relative;
+            z-index: 10;
+            pointer-events: auto;
+
+        }
+        
+        .keys
+        {
+            box-shadow: inset 0 0 1px  #413d3d;
+            background-color: lightslategrey;
+            width: 55px;
+            height: 50px;
+            float: left;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            z-index: 10;
+        }
+
+        .keys:hover
+        {
+            box-shadow: inset 0 0 4px 1px #0ff;
+
+        }
+
+        .wideKey
+        {
+            width: 110px;
+        }
+        .operator
+        {
+            background-color: orange;
+            color: antiquewhite;
+        }
+        .toperator
+        {
+            background-color: #665f5f;
+            
+        }
+        
+    </style>
+    <script>
+        
+        let firstClick = true;
+        function display(val) 
+        {
+            if (firstClick) {
+                document.getElementById("result").innerHTML = "";
+                firstClick = false;
+            }
+            document.getElementById("result").innerHTML += val;
+        }
+        
+        function clearCalc() 
+        { 
+            document.getElementById("result").innerHTML = "0";
+            firstClick = true;
+        } 
+
+        function calculate() 
+        { 
+            let x = document.getElementById("result").innerHTML; 
+            let answer = eval(x); 
+            document.getElementById("result").innerHTML= answer;
+        } 
+        
+        function negative() {
+            
+        }
+        
+    </script>
+</head>
+<body>
+    
+    <div class="bounds">
+        <div class="display"><span id ="result" style="margin-right:15px;">0</span></div>
+        <div class="keypad"> 
+            <div onclick="clearCalc()" class="keys toperator"> C </div>
+            <div onclick="display('* -1')" class="keys toperator"> +/- </div>
+            <div onclick="display('%')"class="keys toperator"> % </div>
+            <div onclick="display('/') "class="keys operator"> ÷ </div>
+            <div onclick="display(7)" class="keys"> 7 </div>
+            <div onclick="display(8)" class="keys"> 8 </div>
+            <div onclick="display(9)" class="keys"> 9 </div>
+            <div onclick="display('*')" class="keys operator"> x </div>
+            <div onclick="display(4)" class="keys"> 4 </div>
+            <div onclick="display(5)" class="keys"> 5 </div>
+            <div onclick="display(6)" class="keys"> 6 </div>
+            <div onclick="display('-')" class="keys operator"> - </div>
+            <div onclick="display(1)" class="keys"> 1 </div>
+            <div onclick="display(2)" class="keys"> 2 </div>
+            <div onclick="display(3)" class="keys"> 3 </div>
+            <div onclick="display('+')" class="keys operator"> + </div>
+            <div onclick="display(0)" class="keys wideKey"> 0 </div>
+            <div onclick="display('.')" class="keys"> . </div>
+            <div onclick="calculate()" div class="keys operator"> = </div>
+        </div>
+        <div class="border"></div>
+
+    </div>
+</body>
+</html>
