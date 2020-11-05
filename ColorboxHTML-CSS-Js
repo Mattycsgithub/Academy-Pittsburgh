@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colorboxboy5000</title>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
+<style>
+    html
+    {
+        background-color: black
+    }
+    body
+    {
+        margin:3em;
+    }
+    .box
+    {
+        height: 100px;
+        width: 100px;
+        background-color: black ;
+        display: flex;
+        float: left;
+    }
+</style>
+<script>
+    function random_bg_color(event) 
+    {
+        const r = Math.floor(Math.random() * 256);
+        const g = Math.floor(Math.random() * 256);
+        const b = Math.floor(Math.random() * 256);
+        var bgColor = "rgb(" + r + "," + g + "," + b + ")";
+        console.log(bgColor)
+        var currentbox = event.target
+        currentbox.style.backgroundColor = bgColor
+    }
+</script>
+</head>
+<body>
+    <div></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+    <div class= "box" onmouseover="random_bg_color(event)"></div>
+</body>
+</html>
+ 
